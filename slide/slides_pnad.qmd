@@ -1,0 +1,30 @@
+---
+title: "Pesquisa Nacional por Amostra de Domicílios (PNAD)"
+author: "Beatriz Silveira, Gabriel Augusto e Vitória Sesana"
+date: "2025"
+format:
+  revealjs:
+    slide-number: true
+    show-slide-number: print
+    menu:
+      side: right
+      width: wide
+      
+---
+
+# Introdução
+
+---
+
+# Exemplos
+
+---
+
+# Prática
+
+
+---
+
+# Considerações finais
+# Agradecemos pela atenção!
+
