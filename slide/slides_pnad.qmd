@@ -1,7 +1,7 @@
 ---
-title: "Pesquisa Nacional por Amostra de Domicílios (PNAD)"
-author: "Beatriz Silveira, Gabriel Augusto e Vitória Sesana"
-date: "2025"
+title: "Pesquisa Nacional por Amostra de Domicílios Contínua (PNADC)"
+author: "Beatriz Silveira & Gabriel Augusto & Vitória Sesana"
+date: "2025-03-18"
 format:
   revealjs:
     slide-number: true
@@ -9,22 +9,20 @@ format:
     menu:
       side: right
       width: wide
-      
 ---
+
+# Resumo
+
+A **Pesquisa Nacional por Amostra de Domicílios Contínua (PNADC)** é um método de amostragem aplicado em todo o país pelo **Instituto Brasileiro de Geografia e Estatística (IBGE)**, que visa obter informações sobre a população por meio de uma **amostragem probabilística estratificada** nas **Unidades Primárias de Amostragem (UPAs)**.
+
+Nesta apresentação, aprofundaremos e explicaremos suas motivações, métodos de funcionamento e resultados.
 
 # Introdução
 
----
+# Métodos
 
-# Exemplos
-
----
-
-# Prática
-
-
----
+# Exemplos e Aplicações
 
 # Considerações finais
-# Agradecemos pela atenção!
 
+# Agradecemos pela atenção!
