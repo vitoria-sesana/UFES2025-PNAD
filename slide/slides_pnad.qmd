@@ -19,6 +19,8 @@ Nesta apresentação, aprofundaremos e explicaremos suas motivações, métodos 
 
 # Introdução
 
+
+
 # Métodos
 
 # Exemplos e Aplicações

@@ -1,0 +1,16 @@
+---
+title: "Relatório - PNADC"
+author: "Gabriel Silva & Beatriz Lima & Vitória Sesana"
+format: pdf
+editor: visual
+---
+
+## INTRODUÇÃO
+
+A **Pesquisa Nacional por Amostra Domiciliar (PNAD)** é uma das principais pesquisas realizadas pelo IBGE, **desenvolvida em 1967** com o objetivo de **obter informações dos núcleos familiares brasileiros, tais como saúde, educação, trabalho, situação socioeconômica e área demográfica**, objetivo este que permanece até os dias de hoje. Pelo fato da população e a dinâmica de seus núcleos familiares serem extremamente mutáveis, a pesquisa já passou por diversas alterações e formatos, mudanças essas que perduram até hoje, seja por forma de abordar os tópicos, adição de novos tópicos e mudanças na metodologia.
+
+**A primeira PNAD permitiu afirmar a existência de desigualdades regionais e sociais na década de 60**, ela mostrou que as regiões Norte e Nordeste possuíam indicadores socioeconômicos e de renda muito menores do que os vistos na região Sul e Sudeste, junto também, mostrou o acúmulo de capital presente em uma mínima parcela da população ao passo que a grande parte ainda se encontrava em situação de extrema pobreza e vulnerabilidade.
+
+**As estimativas constantes fornecidas pela PNAD ao longo dos anos foram de extrema importância para a fomentação de novas leis** que vieram a melhorar as condições de trabalho e vivência da população. Uma das maiores leis advindas da pesquisa foi a criação do **Estatuto da Criança e do Adolescente (ECA - 1990)**, que garantia a segurança das crianças ante abusos, maus-tratos e exploração, permitindo assim, que tivessem melhores condições de vida. Outra grande conquista derivada da PNAD foi a criação do **Programa Bolsa Família (2003)**, observou-se uma concentração de extrema pobreza, sobretudo no nordeste, o que tornou necessária a intervenção do governo para tentar minimizar a situação. **“Minha casa, minha vida” (2009)**, programas de desenvolvimento no nordeste, **Programa Saúde da Família (PSF)** e diversos outros avanços para a população só foram possíveis pois a PNAD existiu, e existe até hoje para demonstrar a situação da população brasileira.
+
+Hoje, chamada de **Pesquisa Nacional por Amostra Domiciliar Contínua (PNADC)**, ela mantém o mesmo objetivo e continua a se atualizar a cada ano para atender as demandas da população, **um dos marcos recentes da PNADC foi em 2022 com a adição de questões relacionadas a gênero e orientação sexual**, até então não existia uma pesquisa de âmbito nacional que buscava **inferir informações da vida econômica, social, saúde e educação da comunidade LGBTQIAPN+**.
