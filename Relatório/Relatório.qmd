@@ -25,7 +25,7 @@ Desse novo modo de coleta de dados é que **surge a PNADC, um modelo atualizado 
 
 Esta seção é dedicada a métodologia da amostragem aplicada na PNADC abordando assuntos, tais quais, cálculo amostral, abrangência geográfica, público alvo e os métodos aplicados de estratificação.
 
-## 2.1 O plano amostral da PNAD Contínua
+## 2.1. O plano amostral da PNAD Contínua
 
 A população alvo é constituída por todas pessoas moradoras de domicilios particulares permanentes da área de abrangência da pesquisa.
 
@@ -35,14 +35,16 @@ Dentro do contextos de setores censitários, foi definido as unidades primárias
 
 O planejamento amostral da PNADC é de conglomerado em dois estágios. No primeiro estágio são selecionadas as UPAs com probabilidade proporcional há quantidade de municipios contida na UPA, assim as UPAs com mais domicilios tem mais chances de serem selecionados. As UPAs selecionadas vão compor a amostra mestra que será utilizada durante um periodo de 3 meses. No segundo estágio, é selecionado 14 domicilios por método de amostragem aleatória simples.
 
-## 2.2 Esquema de rotação 1-2(5)
+## 2.2. Esquema de rotação 1-2(5)
 
 A PNADC adota um esquema de rotação que permite acompanhar mudanças ao longo do tempoo sem precisar redefinir a amostra para cada ciclo. Essa abordagem além de cumprir seu objetivo de permitir comparações entre periodos também economiza recursos financeiros e logisticos. O esquema é chamado de 1-2(5), no qual o domicilio é intrevistado no primeiro mês, fica fora da amaostra por dois meses e se repete esse ciclo por cinco vezes. Além disso, também há os grupos de rotação. As amostras de UPAs são divididas em 15 grupos de rotação sendo cada mês do semestre entrevistados 5 desses grupos.
 
 inserir imagem do esquema de rotação
 
-## 2.3 Estratificação
+## 2.3. Estratificação
 
+Escrever essa parte
 
+## 2.4.
 
 
