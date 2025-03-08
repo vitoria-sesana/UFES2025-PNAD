@@ -5,7 +5,9 @@ format: pdf
 editor: visual
 ---
 
-## INTRODUÇÃO
+# Resumo
+
+# 1. Introdução
 
 A **Pesquisa Nacional por Amostra Domiciliar (PNAD)** é uma das principais pesquisas realizadas pelo IBGE, **desenvolvida em 1967** com o objetivo de **obter informações dos núcleos familiares brasileiros, tais como saúde, educação, trabalho, situação socioeconômica e área demográfica**, objetivo este que permanece até os dias de hoje. Pelo fato da população e a dinâmica de seus núcleos familiares serem extremamente mutáveis, a pesquisa já passou por diversas alterações e formatos, mudanças essas que perduram até hoje, seja por forma de abordar os tópicos, adição de novos tópicos e mudanças na metodologia.
 
@@ -17,4 +19,30 @@ Hoje, chamada de **Pesquisa Nacional por Amostra Domiciliar Contínua (PNADC)**,
 
 Como citado no último parágrafo, **atualmente contamos com a PNADC como modelo atual da pesquisa implementada em 2012**, fruto da chegada de novas tecnologias e modernização dos meios de coleta presentes nas décadas de 1990 e 2000. **O objetivo do IBGE era observar padrões na sociedade não somente no momento do ano em que ocorria a pesquisa**, como costumava ser com a PNAD e outras pesquisas, mas também ser capaz de captar as informações de maneira constante ao longo do ano todo. Assim surge o **Sistema Integrado de Pesquisas Domiciliares (SIPD)**, que tinha a meta de produzir dados em médio e longo prazo, para que fossem mais perceptíveis as mudanças que poderiam ocorrer na população ao longo do ano.
 
- Desse novo modo de coleta de dados é que **surge a PNADC, um modelo atualizado da PNAD**, em que se capta estimadores populacionais trimestralmente. O que permitia, por exemplo, perceber a alta ou baixa produção de alimentos ao longo das estações no setor agrícola. Essa mudança foi de extrema positividade, pois a frequência de informação aumentou consideravelmente, não era mais necessário apresentar temas específicos em edições anuais, o que muitas vezes deixava uma lacuna de informação sobre algum tema na pesquisa, **agora estes temas eram abordados todos ao longo dos trimestres**, o que permitia, ao fim do ano, uma análise aprofundada do comportamento da população em diversas áreas de interesse.
+Desse novo modo de coleta de dados é que **surge a PNADC, um modelo atualizado da PNAD**, em que se capta estimadores populacionais trimestralmente. O que permitia, por exemplo, perceber a alta ou baixa produção de alimentos ao longo das estações no setor agrícola. Essa mudança foi de extrema positividade, pois a frequência de informação aumentou consideravelmente, não era mais necessário apresentar temas específicos em edições anuais, o que muitas vezes deixava uma lacuna de informação sobre algum tema na pesquisa, **agora estes temas eram abordados todos ao longo dos trimestres**, o que permitia, ao fim do ano, uma análise aprofundada do comportamento da população em diversas áreas de interesse.
+
+# 2. Métodos
+
+Esta seção é dedicada a métodologia da amostragem aplicada na PNADC abordando assuntos, tais quais, cálculo amostral, abrangência geográfica, público alvo e os métodos aplicados de estratificação.
+
+## 2.1 O plano amostral da PNAD Contínua
+
+A população alvo é constituída por todas pessoas moradoras de domicilios particulares permanentes da área de abrangência da pesquisa.
+
+A abrangência geográfica da pesquisa é todo o território nacional considerado nos setores censitários definidos, atualmente, pela **Base Operacional Geográfica de 2022** e anteriormente pela **Base Operacional Geográfica de 2010**, desconsiderando áreas de caracteristicas especiais tais quais: quartéis, aldeias indigenas, penintenciárias, conventos, orfanato, entre outros.
+
+Dentro do contextos de setores censitários, foi definido as unidades primárias de amostragem. Um setor censitário com 60 ou mais **domicilios particulares permanentes (DPPs)** constitiu uma UPA e os setores com menos de 60 DPPs foram agrupados em subdistritos até possuir 60 DPPs constituindo uma UPA.
+
+O planejamento amostral da PNADC é de conglomerado em dois estágios. No primeiro estágio são selecionadas as UPAs com probabilidade proporcional há quantidade de municipios contida na UPA, assim as UPAs com mais domicilios tem mais chances de serem selecionados. As UPAs selecionadas vão compor a amostra mestra que será utilizada durante um periodo de 3 meses. No segundo estágio, é selecionado 14 domicilios por método de amostragem aleatória simples.
+
+## 2.2 Esquema de rotação 1-2(5)
+
+A PNADC adota um esquema de rotação que permite acompanhar mudanças ao longo do tempoo sem precisar redefinir a amostra para cada ciclo. Essa abordagem além de cumprir seu objetivo de permitir comparações entre periodos também economiza recursos financeiros e logisticos. O esquema é chamado de 1-2(5), no qual o domicilio é intrevistado no primeiro mês, fica fora da amaostra por dois meses e se repete esse ciclo por cinco vezes. Além disso, também há os grupos de rotação. As amostras de UPAs são divididas em 15 grupos de rotação sendo cada mês do semestre entrevistados 5 desses grupos.
+
+inserir imagem do esquema de rotação
+
+## 2.3 Estratificação
+
+
+
+
