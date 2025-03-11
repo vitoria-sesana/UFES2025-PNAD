@@ -20,7 +20,7 @@ confint(
 
 segmento <- 
   svytotal(
-    x = ~formalidade,
+    x = ~ Setor,
     design = base_design,
     na.rm = TRUE
   )

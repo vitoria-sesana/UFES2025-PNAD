@@ -1,10 +1,10 @@
-# tratamento
+# manipulacao -------------------------------------------------------------
 
 b4 <- as.data.table(b4)
 base_final_tratada <- b4[UF == "32",]
 rm(b4)
 
-# idade -------------------------------------------------------------------
+# faixa etaria ------------------------------------------------------------
 
 base_final_tratada[, fx_etaria := fcase(
   V2009 >= 0 & V2009 <= 13, "0 a 13 anos",
@@ -19,7 +19,7 @@ base_final_tratada[, fx_etaria := fcase(
   default = NA
 )]
 
-base_final_tratada[, idade := fcase(
+base_final_tratada[, fx_etaria_2 := fcase(
   V2009 <= 29, "Jovens",
   V2009 >= 30 & V2009 <= 59, "Adultos",
   V2009 >= 60, "Idosos",
@@ -29,16 +29,14 @@ base_final_tratada[, idade := fcase(
 # formalidade -------------------------------------------------------------
 
 base_final_tratada[, formalidade := fcase(
-  VD4009 %in% c("01", "03", "05", "07"), "Formal",
-  VD4009 %in% c("02", "04", "06", "10", "08", "09"), "Informal",
-  (VD4009 %in% c("08", "07")) & (V4019 == "2" & VD4012 == "2"), "Informal",
-  (VD4009 %in% c("08", "07") & V4019 != "2") | (VD4009 %in% c("08", "07") & VD4012 != "2"), "Formal",
+  VD4009 %in% c("01", "03", "05", "07"),
+  "Formal",
+  VD4009 %in% c("02", "04", "06", "10", "08", "09"), 
+  "Informal",
+  (VD4009 %in% c("08", "07")) & (V4019 == "2" & VD4012 == "2"), 
+  "Informal",
+  (VD4009 %in% c("08", "07") & V4019 != "2") | 
+    (VD4009 %in% c("08", "07") & VD4012 != "2"), 
+  "Formal",
   default = NA
 )]
-
-# preparacao analise ------------------------------------------------------
-
-base_design <- 
-  PNADcIBGE::pnadc_design(
-    as_tibble(base_final_tratada)
-  )

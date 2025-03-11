@@ -1,0 +1,24 @@
+Roteiro 
+
+Leitura/Busca bibliográfica
+	- Artigos que utilizam Regressão Poisson com Variância Robusta
+	- Ferramentas utilizadas (SAS) - verificar a tecnica
+	- Revisão teórica
+
+Métodos
+	- Regressão 
+	- Regressão Poisson
+	- Regressão Logistica
+	- Regressão Robusta 
+
+Aplicações/Simulações
+	- Reutilizar os dados referentes aos artigos
+	- Simulações
+		- Quais cenários?
+
+	- Verificar quais variáveis selecionadas para cada modelo 
+	- Analises
+
+Discussão 
+	- Disponibilidade do método em ferramentas sem a revisão/comprovação teorica 
+	- pROBELMAS DE CONVERGENCIA, dificuldade de resolver

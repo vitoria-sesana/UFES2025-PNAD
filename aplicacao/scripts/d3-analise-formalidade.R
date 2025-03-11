@@ -8,8 +8,7 @@ s3t1_prop <-
     x = ~ formalidade, 
     design = subset(
       base_design,
-      ocupacao_criativo == "Criativo" &
-        VD4002 == "1"
+      VD4002 == "1"
     ),
     na.rm = TRUE
   )

@@ -8,7 +8,6 @@ s2t1_media <-
     x = ~ VD4016, 
     design = subset(
       base_design,
-      ocupacao_criativo == "Criativo" &
         VD4002 == "1"
     ),
     na.rm = TRUE
@@ -22,21 +21,21 @@ s2t1_ic <-
 
 s2t1_media <- as.data.frame(s2t1_media)
 
-
 s2t1 <- 
   cbind(
     s2t1_media,
     s2t1_ic
   ) %>% 
   as.data.frame() %>% 
+  round(2) %>% 
   mutate(
     Categoria = "ES em 2023"
   ) %>% 
   rename(
     "Rendimento médio" = "mean",
     "Erro padrão" = "SE",
-    "Limite inferior" = "5 %",
-    "Limite superior" = "95 %"
+    "Limite inferior" = "2.5 %",
+    "Limite superior" = "97.5 %"
   ) %>% 
   relocate(Categoria)
 
