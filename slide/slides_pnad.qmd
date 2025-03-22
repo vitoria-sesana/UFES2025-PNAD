@@ -1,30 +1,72 @@
 ---
-title: "Pesquisa Nacional por Amostra de Domicílios Contínua (PNADC)"
-author: "Beatriz Silveira & Gabriel Augusto & Vitória Sesana"
-date: "2025-03-18"
 format:
   revealjs:
     slide-number: true
     show-slide-number: print
+    theme: "meds_themes.scss"
     menu:
       side: right
       width: wide
 ---
+## {#title-slide data-menu-title="Title Slide" background="#004586"}
 
-# Resumo
+[Pesquisa Nacional por Amostra de Domicílios Contínua (PNADC)]{.custom-title}
 
-A **Pesquisa Nacional por Amostra de Domicílios Contínua (PNADC)** é um método de amostragem aplicado em todo o país pelo **Instituto Brasileiro de Geografia e Estatística (IBGE)**, que visa obter informações sobre a população por meio de uma **amostragem probabilística estratificada** nas **Unidades Primárias de Amostragem (UPAs)**.
-
-Nesta apresentação, aprofundaremos e explicaremos suas motivações, métodos de funcionamento e resultados.
-
-# Introdução
+[*Uma análise do plano amostral*]{.custom-subtitle}
 
 
+<hr style="border: 1px solid #d2e3f3;">
 
-# Métodos
+:::: {.columns} 
 
-# Exemplos e Aplicações
+::: {.column width="50%"}
+[Beatriz Silveira]{.custom-subtitle2}<br>
+[Gabriel Augusto]{.custom-subtitle2}<br>
+[Vitória Sesana]{.custom-subtitle2}
+:::
 
-# Considerações finais
+::: {.column width="50%"}
+[Universidade Federal do Espírito Santo]{.custom-subtitle2}<br>
+:::
 
-# Agradecemos pela atenção!
+::::
+
+<br>
+
+::: {.title-footer}
+Slides disponíveis em [GitHub {{< fa brands github title="GitHub Octocat logo" >}}](https://github.com/seu-repositorio)
+
+:::
+
+
+---
+
+{{< include sections/0_topicos.qmd >}}
+
+---
+
+{{< include sections/1_introducao.qmd >}}
+
+---
+
+{{< include sections/2_metodos.qmd >}}
+
+---
+
+{{< include sections/3_aplicacoes.qmd >}}
+
+---
+
+{{< include sections/4_consideracoes.qmd >}}
+
+---
+
+{{< include sections/5_referencias.qmd >}}
+
+---
+
+## {#TheEnd data-menu-title="~End Slide~"}
+
+::: {.slide-title .center-text}
+Obrigada pela atenção!
+:::
