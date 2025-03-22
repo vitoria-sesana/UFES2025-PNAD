@@ -1,0 +1,94 @@
+---
+format: 
+  revealjs:
+    slide-number: true
+    code-link: true
+    highlight-style: a11y
+    chalkboard: true
+    # self-contained: true
+    # scrollable: true
+    theme: "meds_themes.scss"
+---
+
+## {#topicos data-menu-title="Tópicos"}
+
+[Introdução]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- Criação da PNAD
+- Renovação para PNADC
+- Diferenças entre PNAD e PNADC
+- Forma de seleção da amostra na PNADC
+- Conquistas da PNAD/PNADC
+:::
+
+---
+
+[Criação da PNAD]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- Criada em 1967 pelo **IBGE**.
+
+- O Publico alvo era os cidadãos residentes em domicílios.
+
+- Buscava informações a respeito da saúde, demografia, educação, indíces socioeconômicos e trabalho em todo o Brasil.
+:::
+
+GRÁFICO DO ULTIMO ANO DA PNAD
+
+---
+
+[Renovação para PNADC]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- Ocorre em 2012.
+
+- Mudança na periodicidade da pesquisa.
+
+- Lidava melhor com a sazonalidade e mudanças momentâneas nos domicílios.
+
+:::
+
+GRAFICO DA PNADC
+
+---
+
+
+[Diferenças entre PNAD e PNADC]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- PNAD desenvolvia indíces anuais enquanto a PNADC desenvolve indíces trimestrais.
+
+- Metodologia.
+
+- PNADC segue atualmente, focada em buscar informações sobre a força de trabalho brasileira.
+
+- Tecnologia
+
+IMAGEM DE UM DMC E UM QUESTIONÁRIO FISICO
+
+:::
+
+---
+
+[Forma de seleção da amostra na PNADC]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- Setor Censitário.
+
+- Unidade Primária de Amostragem **(UPA)**.
+
+- Estratifição, Conglomerados e Amostragem Aleatória Simples
+
+
+:::
