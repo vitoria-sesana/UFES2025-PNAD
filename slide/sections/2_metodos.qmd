@@ -1,0 +1,72 @@
+---
+format: 
+  revealjs:
+    slide-number: true
+    code-link: true
+    highlight-style: a11y
+    chalkboard: true
+    # self-contained: true
+    # scrollable: true
+    theme: "meds_themes.scss"
+---
+
+## {#metodos1 data-menu-title="Métodos: O plano amostral"}
+
+[Métodos]{.slide-title}
+
+[O plano amostral]{.custom-subtitle2}
+
+<hr>
+
+::: body-text-s
+
+- **População alvo:** Todas as pessoas moradoras de domicílios particulares permanentes.
+
+- **Abrangência Geográfica:** Todo o território nacional definidos pelas Base Operacional Geográfica de 2022, excluindo áreas especiais (quartéis, aldeias indígenas, etc.).
+
+:::
+
+::: body-text-m
+
+::: callout-important
+## Definição
+
+**Unidades Primárias de Amostragem (UPA):** Setores censitários com 60 ou mais domicílios. Setores menores são agrupados até atingir 60 domicílios.
+
+:::
+
+:::
+
+---
+
+## {#metodos2 data-menu-title="Métodos: O plano amostral"}
+
+[Métodos]{.slide-title}
+
+[O plano amostral]{.custom-subtitle2}
+
+<hr>
+
+::: body-text-m
+
+O planejamento amostral da PNADC é de conglomerado em dois estágios.
+
+- [*1º Estágio:*]{.sanchez-font} 
+As Unidades Primárias de Amostragem (UPAs) são selecionadas com **probabilidade proporcional** ao número de domicílios. As UPAs selecionadas compõem a **amostra mestra**, usada por um período de três meses.
+
+- **2º Estágio:**   Dentro das UPAs selecionadas, **14 domicílios** são sorteados por **amostragem aleatória simples**.
+
+:::
+
+---
+
+## {#metodos3 data-menu-title="Métodos: Estratificação"}
+
+[Métodos]{.slide-title}
+
+[Estratificação]{.custom-subtitle2}
+
+<hr>
+
+
+---

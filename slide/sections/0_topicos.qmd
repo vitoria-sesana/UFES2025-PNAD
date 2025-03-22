@@ -16,10 +16,10 @@ format:
 
 <hr>
 
-::: {.body-text-m}
-- Introdução
-- Métodos
-- Aplicações
-- Considerações finais
-- Referências
+::: body-text-m
+-   Introdução
+-   Métodos
+-   Aplicações
+-   Considerações finais
+-   Referências
 :::

@@ -160,7 +160,7 @@ hr {
 
 // M body text
 .body-text-m {
-	font-size: 1.3em;
+	font-size: 1.0em;
 	line-height: 1.3em;
 	margin-bottom: 1em;
 }
@@ -226,6 +226,14 @@ hr {
   text-underline-offset: 10px; // https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset
   text-decoration-thickness: 4px;
 }
+
+.callout-important {
+  background-color: #off-white;
+  border-left: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 
 // center text (horizontally)
 .center-text{

@@ -22,7 +22,8 @@ format:
 ::: {.column width="50%"}
 [Beatriz Silveira]{.custom-subtitle2}<br>
 [Gabriel Augusto]{.custom-subtitle2}<br>
-[Vitória Sesana]{.custom-subtitle2}
+[Vitória Sesana]{.custom-subtitle2}<br>
+[Gregório Lage]{.custom-subtitle2}
 :::
 
 ::: {.column width="50%"}
@@ -34,7 +35,7 @@ format:
 <br>
 
 ::: {.title-footer}
-Slides disponíveis em [GitHub {{< fa brands github title="GitHub Octocat logo" >}}](https://github.com/seu-repositorio)
+Slides disponíveis em [GitHub {{< fa brands github title="GitHub Octocat logo" >}}](https://github.com/vitoria-sesana/UFES2025-PNAD)
 
 :::
 
@@ -65,7 +66,7 @@ Slides disponíveis em [GitHub {{< fa brands github title="GitHub Octocat logo" 
 
 ---
 
-## {#TheEnd data-menu-title="~End Slide~"}
+## {#TheEnd data-menu-title="Slide Final"}
 
 ::: {.slide-title .center-text}
 Obrigada pela atenção!
