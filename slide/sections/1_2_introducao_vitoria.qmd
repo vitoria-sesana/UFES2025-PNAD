@@ -12,16 +12,29 @@ format:
 
 [Introdução]{.slide-title}
 
-[Variáveis da PNAD]{.custom-subtitle2}
+[Conceitos da PNADc]{.custom-subtitle2}
 
 <hr>
 
 ::: {.body-text-m}
 
+- Semana de entrevista;
+
+- Semana de referência;
+
+- Mês de referência; 
+
+- Pessoas ocupadas;
+
+- Pessoas desocupadas;
+
+- Pessoas na força de trabalho;
+
+- Pessoas fora da força de trabalho.
+
 :::
 
 ---
-
 
 [Introdução]{.slide-title}
 
@@ -31,8 +44,25 @@ format:
 
 ::: {.body-text-m}
 
-:::
+A PNADc é divido em partes:
 
+- Parte 1: Identificação e Controle;
+
+- Parte 2: Características Gerais dos Moradores;						
+
+- Parte 3: Características de educação para os moradores de 5 anos ou mais de idade;
+
+- Parte 4: Características de trabalho das pessoas de 14 anos ou mais de idade;	
+
+      - Pessoas Ocupadas;							
+      
+      - Pessoas não ocupadas;							
+	
+- Variáveis Derivadas;							
+
+- Pesos Replicados.							
+
+:::
 
 ---
 
@@ -50,5 +80,8 @@ format:
 - Peso Amostral;
 
 - Períodos de Sobreposição.
+
+
+[Acesse as variáveis da PNAD](/dicionarios_PNAD/dicionario_PNAD.pdf)
 
 :::
