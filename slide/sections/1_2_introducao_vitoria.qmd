@@ -1,0 +1,54 @@
+---
+format: 
+  revealjs:
+    slide-number: true
+    code-link: true
+    highlight-style: a11y
+    chalkboard: true
+    # self-contained: true
+    # scrollable: true
+    theme: "meds_themes.scss"
+---
+
+[Introdução]{.slide-title}
+
+[Variáveis da PNAD]{.custom-subtitle2}
+
+<hr>
+
+::: {.body-text-m}
+
+:::
+
+---
+
+
+[Introdução]{.slide-title}
+
+[Variáveis da PNADc]{.custom-subtitle2}
+
+<hr>
+
+::: {.body-text-m}
+
+:::
+
+
+---
+
+[Introdução]{.slide-title}
+
+[É possível a análise conjunta entre PNAD e a PNADc?]{.custom-subtitle2}
+
+<hr>
+
+::: {.body-text-m}
+- Diferenças metodológicas;
+
+- Variáveis comparáveis;
+
+- Peso Amostral;
+
+- Períodos de Sobreposição.
+
+:::
