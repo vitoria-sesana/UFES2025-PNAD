@@ -26,7 +26,9 @@ format:
 
 ---
 
-[Criação da PNAD]{.slide-title}
+[Introdução]{.slide-title}
+
+[Criação da PNAD]{.custom-subtitle2}
 
 <hr>
 
@@ -42,7 +44,9 @@ GRÁFICO DO ULTIMO ANO DA PNAD
 
 ---
 
-[Renovação para PNADC]{.slide-title}
+[Introdução]{.slide-title}
+
+[Renovação para PNADC]{.custom-subtitle2}
 
 <hr>
 
@@ -60,12 +64,14 @@ GRAFICO DA PNADC
 ---
 
 
-[Diferenças entre PNAD e PNADC]{.slide-title}
+[Introdução]{.slide-title}
+
+[Diferenças entre PNAD e PNADC]{.custom-subtitle2}
 
 <hr>
 
 ::: {.body-text-m}
-- PNAD desenvolvia indíces anuais enquanto a PNADC desenvolve indíces trimestrais.
+- PNAD desenvolvia índices anuais enquanto a PNADC desenvolve índices trimestrais.
 
 - Metodologia.
 
@@ -79,7 +85,9 @@ IMAGEM DE UM DMC E UM QUESTIONÁRIO FISICO
 
 ---
 
-[Forma de seleção da amostra na PNADC]{.slide-title}
+[Introdução]{.slide-title}
+
+[Forma de seleção da amostra na PNADC]{.custom-subtitle2}
 
 <hr>
 
@@ -88,7 +96,26 @@ IMAGEM DE UM DMC E UM QUESTIONÁRIO FISICO
 
 - Unidade Primária de Amostragem **(UPA)**.
 
-- Estratifição, Conglomerados e Amostragem Aleatória Simples
+- Estratifição,  Por Conglomerados e Amostragem Aleatória Simples.
 
+
+:::
+
+---
+
+[Introdução]{.slide-title}
+
+[Conquistas da PNAD/PNADC]{.custom-subtitle2}
+
+<hr>
+
+::: {.body-text-m}
+- Estatuto da Criança e do Adolescente **(ECA - 1990)**.
+
+- Programa Bolsa Familia **(2003)**.
+
+- "Minha casa minha vida" **(2009)**.
+
+- Artigos Científicos
 
 :::
