@@ -8,7 +8,7 @@
 <link href="slides_pnad_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="slides_pnad_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="slides_pnad_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.57">
+  <meta name="generator" content="quarto-1.3.450">
 
   <title>slides_pnad</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -155,8 +155,7 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    padding-bottom: 0.5rem;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -332,13 +331,14 @@
 <hr style="border: 1px solid #d2e3f3;">
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><span class="custom-subtitle2">Beatriz Silveira</span><br> <span class="custom-subtitle2">Gabriel Augusto</span><br> <span class="custom-subtitle2">Vitória Sesana</span><br> <span class="custom-subtitle2">Gregório Lage</span></p>
+<p><span class="custom-subtitle3">Beatriz Silveira</span><br> <span class="custom-subtitle3">Gabriel Augusto</span><br> <span class="custom-subtitle3">Vitória Sesana</span><br> <span class="custom-subtitle3">Gregório Lage</span></p>
 </div><div class="column" style="width:50%;">
-<p><span class="custom-subtitle2">Universidade Federal do Espírito Santo</span><br></p>
-</div></div>
+<p><span class="custom-subtitle3">Universidade Federal do Espírito Santo</span><br></p>
+</div>
+</div>
 <p><br></p>
 <div class="title-footer">
-<p>Slides disponíveis em <a href="https://github.com/vitoria-sesana/UFES2025-PNAD">GitHub {{&lt; fa brands github "GitHub Octocat logo" &gt;}}</a></p>
+<p>Slides disponíveis em <a href="https://github.com/vitoria-sesana/UFES2025-PNAD">GitHub </a></p>
 </div>
 </section>
 <section id="topicos" class="slide level2" data-menu-title="Tópicos">
@@ -426,13 +426,11 @@
 <p><span class="slide-title">Métodos</span></p>
 <p><span class="custom-subtitle2">O plano amostral</span></p>
 <hr>
-<div class="body-text-s">
+<div class="body-text-m">
 <ul>
 <li><p><strong>População alvo:</strong> Todas as pessoas moradoras de domicílios particulares permanentes.</p></li>
 <li><p><strong>Abrangência Geográfica:</strong> Todo o território nacional definidos pelas Base Operacional Geográfica de 2022, excluindo áreas especiais (quartéis, aldeias indígenas, etc.).</p></li>
 </ul>
-</div>
-<div class="body-text-m">
 <div class="callout callout-important callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -466,6 +464,41 @@
 <p><span class="slide-title">Métodos</span></p>
 <p><span class="custom-subtitle2">Estratificação</span></p>
 <hr>
+<div class="body-text-s">
+<ul>
+<li><p><strong>Objetivo:</strong> Garantir representatividade da amostra em diferentes níveis geográficos e socioeconômicos.</p></li>
+<li><p><strong>Etapas de Estratificação:</strong></p>
+<ol type="1">
+<li><strong>Divisão Administrativa:</strong>
+<ul>
+<li>Unidades da Federação (UFs).</li>
+<li>Regiões Metropolitanas (RM) e RIDEs.</li>
+<li>5 Grupos:
+<ol type="1">
+<li>Capital</li>
+<li>Demais municípios das RM/RIDE</li>
+<li>Municípios de expansão metropolitana</li>
+<li>Municípios de RIDE com sede em outra UF</li>
+<li>Demais municípios da UF</li>
+</ol></li>
+</ul></li>
+<li><strong>Geográfica Espacial:</strong>
+<ul>
+<li>Separação por microrregiões, bairros e distritos.</li>
+<li>Foco em diferenças regionais.</li>
+</ul></li>
+<li><strong>Situação dos Domicílios:</strong>
+<ul>
+<li>Urbano vs.&nbsp;Rural.</li>
+</ul></li>
+<li><strong>Estatística:</strong>
+<ul>
+<li>Homogeneização por rendimento total e número de domicílios.</li>
+<li>Minimização da variância do estimador.</li>
+</ul></li>
+</ol></li>
+</ul>
+</div>
 </section>
 <section class="slide level2">
 
@@ -484,10 +517,8 @@
 <div class="slide-title center-text">
 <p>Obrigada pela atenção!</p>
 </div>
-<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
-</div>
 </div>
 </section>
     </div>
@@ -516,6 +547,7 @@
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
+'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -732,7 +764,18 @@
         }
         return false;
       }
-      const onCopySuccess = function(e) {
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -764,50 +807,11 @@
         }, 1000);
         // clear code selection
         e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
       });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        // For code content inside modals, clipBoardJS needs to be initialized with a container option
-        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-        }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
-            }
-          }
-        }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      function tippyHover(el, contentFn) {
         const config = {
           allowHTML: true,
+          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -817,17 +821,8 @@
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start',
+          placement: 'bottom-start'
         };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -841,11 +836,7 @@
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
-          }
+          return note.innerHTML;
         });
       }
       const findCites = (el) => {

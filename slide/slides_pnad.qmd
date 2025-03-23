@@ -20,14 +20,14 @@ format:
 :::: {.columns} 
 
 ::: {.column width="50%"}
-[Beatriz Silveira]{.custom-subtitle2}<br>
-[Gabriel Augusto]{.custom-subtitle2}<br>
-[Vitória Sesana]{.custom-subtitle2}<br>
-[Gregório Lage]{.custom-subtitle2}
+[Beatriz Silveira]{.custom-subtitle3}<br>
+[Gabriel Augusto]{.custom-subtitle3}<br>
+[Vitória Sesana]{.custom-subtitle3}<br>
+[Gregório Lage]{.custom-subtitle3}
 :::
 
 ::: {.column width="50%"}
-[Universidade Federal do Espírito Santo]{.custom-subtitle2}<br>
+[Universidade Federal do Espírito Santo]{.custom-subtitle3}<br>
 :::
 
 ::::

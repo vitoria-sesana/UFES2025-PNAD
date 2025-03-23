@@ -18,15 +18,12 @@ format:
 
 <hr>
 
-::: body-text-s
+::: body-text-m
 
 - **População alvo:** Todas as pessoas moradoras de domicílios particulares permanentes.
 
 - **Abrangência Geográfica:** Todo o território nacional definidos pelas Base Operacional Geográfica de 2022, excluindo áreas especiais (quartéis, aldeias indígenas, etc.).
 
-:::
-
-::: body-text-m
 
 ::: callout-important
 ## Definição
@@ -67,6 +64,36 @@ As Unidades Primárias de Amostragem (UPAs) são selecionadas com **probabilidad
 [Estratificação]{.custom-subtitle2}
 
 <hr>
+
+::: body-text-s
+
+- **Objetivo:** Garantir representatividade da amostra em diferentes níveis geográficos e socioeconômicos.
+
+- **Etapas de Estratificação:**
+
+  1. **Divisão Administrativa:**
+     - Unidades da Federação (UFs).
+     - Regiões Metropolitanas (RM) e RIDEs.
+     - 5 Grupos:
+       1. Capital
+       2. Demais municípios das RM/RIDE
+       3. Municípios de expansão metropolitana
+       4. Municípios de RIDE com sede em outra UF
+       5. Demais municípios da UF
+
+  2. **Geográfica Espacial:**
+     - Separação por microrregiões, bairros e distritos.
+     - Foco em diferenças regionais.
+
+  3. **Situação dos Domicílios:**
+     - Urbano vs. Rural.
+
+  4. **Estatística:**
+     - Homogeneização por rendimento total e número de domicílios.
+     - Minimização da variância do estimador.
+
+:::
+
 
 
 ---
