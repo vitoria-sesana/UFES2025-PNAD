@@ -1,0 +1,23 @@
+---
+format: 
+  revealjs:
+    slide-number: true
+    code-link: true
+    highlight-style: a11y
+    chalkboard: true
+    theme: "meds_themes.scss"
+---
+
+## {#aplicacoes data-menu-title="Aplicações"} 
+
+[Aplicações]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- **Periodicidade Mensal**
+- **Periodicidade Trimestral**
+- **Periodicidade Anual**
+- **Periodicidade Variável**
+:::
+---
