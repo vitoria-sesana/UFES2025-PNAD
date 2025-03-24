@@ -110,7 +110,9 @@ As Unidades Primárias de Amostragem (UPAs) são selecionadas com **probabilidad
 
 <hr>
 
-![Diagrama de Estratificação](slide/plots/diagrama_estratificacao.png){width=50%}
+_Figura 1: Diagrama de Estratificação._
+
+![](plots/diagrama_estratificacao.png){width=50%}
 
 
 ---
@@ -178,7 +180,7 @@ Onde:
 
 ::: {.center}
 
-_Figura 1: Esquema de rotação 1-2(5)._
+_Figura 2: Esquema de rotação 1-2(5)._
 
 
 ![](esquema_rotacao.png){width=65% fig-align="center"}
