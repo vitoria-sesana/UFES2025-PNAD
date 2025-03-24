@@ -292,8 +292,39 @@ Onde
 
 ::: body-text-s
 
+Primeira Etapa:
+
+- Divisão em dois grupos:
+
+  - Grupo 1: Capitais e regiões metropolitanas.
+
+  - Grupo 2: Demais municípios.
+
+Alocação proporcional ao número de UPAs em cada grupo.
+
+Segunda Etapa:
+
+- Grupo 1 (Capitais e RM): Alocação proporcional ao número de domicílios e pessoas ocupadas.
+
+- Grupo 2 (Demais Municípios): Alocação proporcional ao número de UPAs.
+
 :::
 
+---
+
+## {#metodos12 data-menu-title="Metodologia: Ajustes no tamanho da amostra"}
+
+[Metodologia]{.slide-title}
+
+[Ajustes no Tamanho da Amostra]{.custom-subtitle2}
+
+<hr>
+
+- **Ajuste de Tamanho Mínimo por Estrato:** Garantir que cada estrato tenha pelo menos 15 UPAs (devido ao esquema de rotação 1-2(5)).
+
+- **Ajuste para Homogeneidade da Carga de Trabalho:** Tamanho da amostra em cada estrato é múltiplo de 12, para distribuir a coleta de dados ao longo de 12 semanas.
+
+- **Ajuste de Precisão para Capitais:** Garantir que o Coeficiente de Variação (CV) para o total de pessoas desocupadas seja menor que 15%.
 
 --- 
 
@@ -325,15 +356,17 @@ grupo, de acordo com os tamanhos previamente calculados.
 
 --- 
 
-## {#metodos13 data-menu-title="Metodologia: Rotação da amostra e Seleção dos domicílios"}
+## {#metodos13 data-menu-title="Metodologia: Seleção dos domicílios"}
 
 [Metodologia]{.slide-title}
 
-[Rotação da amostra e Seleção dos domicílios]{.custom-subtitle2}
+[Seleção dos domicílios]{.custom-subtitle2}
 
 <hr>
 
-::: body-text-s
+::: body-text-m
+
+Após a atualização de cadastros dos domicilios realizados pelo Cadastro Nacional de Endereços para Fins Estatísticos (CNEFE), realizado trimestralmente. Ocorre a seleção dos domicilios que irão contribuir para a PNADC por meio de Amostragem Aleatória Simples, considerando apenas os domicilios particulares permanentes ocupados cadastrados no CNEFE.
 
 :::
 
@@ -538,10 +571,89 @@ Onde:
 
 [Metodologia]{.slide-title}
 
-[Estimadores]{.custom-subtitle2}
+[Outros estimadores relevantes]{.custom-subtitle2}
 
 <hr>
 
 ::: body-text-s
 
+Outros estimadores relevantes para a PNADC são os estimadores de total da característica de interesse ou razões entre totais de duas características, alguns dos mais relevantes são:
+
+Totais para um trimestre:
+
+$$
+\hat{Y}_{r}^{tri} = \sum_{g} \sum_{i} \sum_{j} \sum_{k} W'_{gij} y_{gijk} = \sum_{a} \sum_{g} \sum_{i} \sum_{j} \sum_{k} W_{gij}^* y_{gijk} \times \frac{P_a^{tri}}{\hat{P}_a^{tri}} =
+$$
+
+$$
+= \sum_{a} \hat{Y}_{a}^{tri} \times \frac{P_a^{tri}}{\hat{P}_a^{tri}} = \sum_{a} \frac{\hat{Y}_{a}^{tri}}{\hat{P}_a^{tri}} \times P_a^{tri}
+$$
+
+onde
+
+- $y_{gijk}$ é o valor da variável de interesse  $y$ para a pessoa $k$ do domicílio $j$ da UPA $i$ do grupo de rotação $g$;
+- $\hat{Y}_{a}^{tri}$ é o estimador natural do total da variável de interesse $y$ no nível geográfico $a$.
+
+
 :::
+
+---
+
+## {#metodos22 data-menu-title="Metodologia: Outros estimadores"}
+
+[Metodologia]{.slide-title}
+
+[Outros estimadores relevantes]{.custom-subtitle2}
+
+<hr>
+
+::: body-text-s
+
+Diferenças entre totais de dois trimestres:
+
+$$
+\hat{Y}_r^{tri} - \hat{Y}_r^{tri}
+$$
+
+Razões:
+
+$$
+\hat{R}^{tri} = \frac{\hat{Y}_r^{tri}}{\hat{X}_r^{tri}}
+$$
+
+onde
+
+$$
+\hat{X}_r^{tri} = \sum_g \sum_i \sum_j \sum_k W'_{gij} X_{gijk}
+$$
+
+
+$$X_{gijk}$$ é o valor da variável de interesse $x$ para a pessoa $k$ do domicílio $j$ da UPA $i$ do grupo de rotação $g$.
+
+
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
