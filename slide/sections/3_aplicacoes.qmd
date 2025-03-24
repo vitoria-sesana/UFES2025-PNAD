@@ -15,9 +15,43 @@ format:
 <hr>
 
 ::: {.body-text-m}
-- **Periodicidade Mensal**
+- **Periodicidade Mensal***
 - **Periodicidade Trimestral**
 - **Periodicidade Anual**
 - **Periodicidade Variável**
 :::
+
+---
+
+## {#aplicacoes2 data-menu-title="Aplicações"} 
+
+[Aplicações]{.slide-title}
+
+[Periodicidade Trimestral]{.custom-subtitle2}
+
+<hr>
+
+::: {.body-text-m}
+- **Ocupação de trabalho**
+- **Desemprego**
+- **Rendimento**
+:::
+
+---
+
+## {#aplicacoes3 data-menu-title="Aplicações"} 
+
+[Aplicações]{.slide-title}
+
+[Periodicidade Anual]{.custom-subtitle2}
+
+<hr>
+
+::: {.body-text-m}
+- **Trabalho infantil**
+- **Outras formas de trabalho (produção para o próprio consumo, trabalho voluntário, cuidados com familiares e afazeres domésticos)**
+- **Características da habitação e bens duráveis**
+- **Rendimento de outras fontes**
+:::
+
 ---
