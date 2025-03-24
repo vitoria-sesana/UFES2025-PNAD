@@ -62,6 +62,10 @@ A PNADc é divido em partes:
 
 - Pesos Replicados.							
 
+
+[Acesse as variáveis da PNADc](/dicionarios_PNAD/dicionario_PNADC_microdados_trimestral.xls)
+
+
 :::
 
 ---

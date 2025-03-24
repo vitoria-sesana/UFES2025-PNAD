@@ -35,7 +35,7 @@ format:
 <br>
 
 ::: {.title-footer}
-Slides disponíveis em [GitHub {{< fa brands github title="GitHub Octocat logo" >}}](https://github.com/vitoria-sesana/UFES2025-PNAD)
+Slides disponíveis em [GitHub](https://github.com/vitoria-sesana/UFES2025-PNAD)
 
 :::
 
