@@ -39,6 +39,36 @@ format:
 
 ---
 
+## {#series_historicas data-menu-title="Periodicidade Trimestral"} 
+
+[Periodicidade Trimestral]{.slide-title}
+
+<hr>
+
+![](https://imgur.com/6tZs45Y)
+
+---
+
+## {#series_historicas2 data-menu-title="Periodicidade Trimestral"} 
+
+[Periodicidade Trimestral]{.slide-title}
+
+<hr>
+
+![](https://imgur.com/dQNeWKJ)
+
+---
+
+## {#periodicidade_mensal data-menu-title="Periodicidade Mensal"} 
+
+[Periodicidade Mensal]{.slide-title}
+
+<hr>
+
+![](https://imgur.com/O3PGDLE)
+
+---
+
 ## {#aplicacoes3 data-menu-title="Aplicações"} 
 
 [Aplicações]{.slide-title}
@@ -56,14 +86,12 @@ format:
 
 ---
 
-## {#series_historicas data-menu-title="Séries Históricas"} 
+## {#periodicidade_anual data-menu-title="Periodicidade Anual"} 
 
-[Séries Históricas]{.slide-title}
-
-[Taxa de desocupação]{.custom-subtitle2}
+[Periodicidade Anual]{.slide-title}
 
 <hr>
 
-![](https://imgur.com/6tZs45Y)
+![](https://imgur.com/x1V3dbL)
 
 ---
