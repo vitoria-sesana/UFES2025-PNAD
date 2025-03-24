@@ -15,7 +15,7 @@ format:
 <hr>
 
 ::: {.body-text-m}
-- **Periodicidade Mensal***
+- **Periodicidade Mensal**
 - **Periodicidade Trimestral**
 - **Periodicidade Anual**
 - **Periodicidade Variável**
@@ -23,7 +23,7 @@ format:
 
 ---
 
-## {#aplicacoes2 data-menu-title="Aplicações"} 
+## {#aplicacoes3 data-menu-title="Aplicações"} 
 
 [Aplicações]{.slide-title}
 
@@ -69,7 +69,7 @@ format:
 
 ---
 
-## {#aplicacoes3 data-menu-title="Aplicações"} 
+## {#aplicacoes4 data-menu-title="Aplicações"} 
 
 [Aplicações]{.slide-title}
 
