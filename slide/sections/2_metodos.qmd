@@ -10,9 +10,9 @@ format:
     theme: "meds_themes.scss"
 ---
 
-## {#metodos1 data-menu-title="Métodos: O plano amostral"}
+## {#metodos1 data-menu-title="Metodologia: O plano amostral"}
 
-[Métodos]{.slide-title}
+[Metodologia]{.slide-title}
 
 [O plano amostral]{.custom-subtitle2}
 
@@ -36,9 +36,9 @@ format:
 
 ---
 
-## {#metodos2 data-menu-title="Métodos: O plano amostral"}
+## {#metodos2 data-menu-title="Metodologia: O plano amostral"}
 
-[Métodos]{.slide-title}
+[Metodologia]{.slide-title}
 
 [O plano amostral]{.custom-subtitle2}
 
@@ -51,15 +51,15 @@ O planejamento amostral da PNADC é de conglomerado em dois estágios.
 - [*1º Estágio:*]{.sanchez-font} 
 As Unidades Primárias de Amostragem (UPAs) são selecionadas com **probabilidade proporcional** ao número de domicílios. As UPAs selecionadas compõem a **amostra mestra**, usada por um período de três meses.
 
-- **2º Estágio:**   Dentro das UPAs selecionadas, **14 domicílios** são sorteados por **amostragem aleatória simples**.
+- [*2º Estágio:*]{.sanchez-font}  Dentro das UPAs selecionadas, **14 domicílios** são sorteados por **amostragem aleatória simples**.
 
 :::
 
 ---
 
-## {#metodos3 data-menu-title="Métodos: Estratificação"}
+## {#metodos3 data-menu-title="Metodologia: Estratificação"}
 
-[Métodos]{.slide-title}
+[Metodologia]{.slide-title}
 
 [Estratificação]{.custom-subtitle2}
 
@@ -82,18 +82,252 @@ As Unidades Primárias de Amostragem (UPAs) são selecionadas com **probabilidad
        5. Demais municípios da UF
 
   2. **Geográfica Espacial:**
+  
      - Separação por microrregiões, bairros e distritos.
      - Foco em diferenças regionais.
 
   3. **Situação dos Domicílios:**
+  
      - Urbano vs. Rural.
 
   4. **Estatística:**
+  
      - Homogeneização por rendimento total e número de domicílios.
      - Minimização da variância do estimador.
 
 :::
 
 
+--- 
 
----
+## {#metodos3 data-menu-title="Metodologia: Tamanho da amostra"}
+
+[Metodologia]{.slide-title}
+
+[Tamanho da amostra]{.custom-subtitle2}
+
+<hr>
+
+::: body-text-s
+
+Total de pessoas desocupadas de 14 anos ou mais de
+idade:
+
+$$
+Y = \sum_{h=1}^{L} \sum_{i=1}^{M_h} \sum_{j=1}^{N_{hi}} Y_{hij} = \sum_{h=1}^{L} Y_h
+$$
+
+Em que:
+
+- $h$  é o índice do estrato a que pertence a UPA;
+
+- $i$  é o índice da UPA dentro do estrato;
+
+- $j$  é o índice do domicílio dentro da UPA;
+
+- $L$  é o número total de estratos;
+- $M_h$  é o número de UPAs na população do estrato  $h$;
+- $N_{hi}$  é o número de domicílios na população da UPA  $i$ , do estrato  $h$;
+- $Y_{hij}$  é o valor da variável  $y$  no domicílio  $j$  da UPA  $i$ , do estrato  h ; e
+- $Y_h$  é o total da variável  $y$  no estrato  $h$ .
+
+
+:::
+
+--- 
+
+## {#metodos3 data-menu-title="Metodologia: Tamanho da amostra"}
+
+[Metodologia]{.slide-title}
+
+[Tamanho da amostra]{.custom-subtitle2}
+
+<hr>
+
+::: body-text-s
+
+Estimador do total de pessoas desocupadas de 14 anos ou mais de
+idade (Kish 1965):
+
+$$
+\hat{Y} = \sum_{h=1}^{L} \frac{1}{m_h} \sum_{i=1}^{m_h} \frac{\hat{Y}_{hi}}{p_{hi}}
+$$
+Variância do estimador:
+
+$$
+V\bigl(\hat{Y}\bigr) = \sum_{h=1}^L \frac{1}{m_h} \Bigg[ \sum_{i=1}^{M_h} \frac{Y^2_{hi}}{p_{hi}} - Y^2_h + \sum_{i=1}^{M_h} \frac{N^2_{hi}}{p_{hi}} \cdot \frac{S^2_{\mathrm{yhi}}}{n_{hi}} \cdot \frac{N_{hi} - n_{hi}}{N_{hi}} \Bigg]
+$$
+
+:::
+
+
+--- 
+
+## {#metodos3 data-menu-title="Metodologia: Tamanho da amostra"}
+
+[Metodologia]{.slide-title}
+
+[Tamanho da amostra]{.custom-subtitle2}
+
+<hr>
+
+::: body-text-s
+
+Onde 
+
+- $L$ é o número total de estratos.
+
+- $M_h$ é o número total de UPAs no estrato $h$.
+
+- $Y_h$ é o total da variável de interesse $y$ no estrato $h$.
+
+- $S^2_{\mathrm{yhi}}$ é a variância da variável de interesse $y$ na UPA $i$ do estrato h.
+
+- $n_{hi}$ é o número de domicílios na amostra da UPA $i$ do estrato $h$.
+
+- $N_{hi}$ é o número de domicílios na população da UPA $i$ do estrato $h$.
+
+- $p_{hi} = \frac{N_{hi}}{N_h}$  é o tamanho relativo da UPA $i$ do estrato $h$, que define a probabilidade de seleção desta UPA em um sorteio com PPT com reposição.
+
+- $Y_{hi} = \sum_{j=1}^{N_h} y_{hij}$  é o total da variável $y$ na UPA $i$ do estrato $h$.
+    
+:::
+
+--- 
+
+## {#metodos3 data-menu-title="Metodologia: Alocação do tamanho da amostra"}
+
+[Metodologia]{.slide-title}
+
+[Alocação do tamanho da amostra]{.custom-subtitle2}
+
+<hr>
+
+::: body-text-s
+
+:::
+
+
+--- 
+
+## {#metodos3 data-menu-title="Metodologia: Seleção das unidades primárias de amostragem"}
+
+[Metodologia]{.slide-title}
+
+[Seleção das unidades primárias de amostragem
+]{.custom-subtitle2}
+
+<hr>
+
+::: body-text-s
+- Amostragem de Pareto PPT (ver Costa, 2007) 
+
+$$ Q_{i} = \frac{ALEAT - ALEAT*p}{p - ALEAT*p}$$ 
+Onde:
+
+- $ALEAT$ é o número aleatório entre 0 e 1;
+
+- $p = \frac{DPPO_{i}}{\sum_{i \in GRUPO DPPO_{i}}}$ é a proporção de domicílios da UPA i dentro do grupo de rotação.
+
+As UPAs são, então, ordenadas de forma crescente segundo a
+quantidade $Q_{i}$, e são selecionadas para a amostra as primeiras de cada
+grupo, de acordo com os tamanhos previamente calculados.
+
+:::
+
+
+--- 
+
+## {#metodos3 data-menu-title="Metodologia: Rotação da amostra e Seleção dos domicílios"}
+
+[Metodologia]{.slide-title}
+
+[Rotação da amostra e Seleção dos domicílios]{.custom-subtitle2}
+
+<hr>
+
+::: body-text-s
+
+:::
+
+--- 
+
+## {#metodos3 data-menu-title="Metodologia: Cálculo dos pesos: UPAs"}
+
+[Metodologia]{.slide-title}
+
+[Cálculo dos pesos: UPAs]{.custom-subtitle2}
+
+<hr>
+
+::: body-text-s
+
+$$w_{gi} = \frac{1}{m_g} \times \frac{N_g}{N_{gi}}$$
+:::
+
+- $m_{g}$ é o número de UPAs selecionadas no grupo de rotação $g$;
+
+- $N_{gi}$ é o número de domicílios particulares permanentes ocupados, ocupados
+sem entrevistas realizadas e vagos na UPA $i$ do grupo de rotação $g$, dados
+do Censo 2010;
+
+- $N_{g}$ é o número de domicílios particulares permanentes ocupados, ocupados
+sem entrevistas realizadas e vagos no grupo de rotação $g$.
+
+--- 
+
+## {#metodos3 data-menu-title="Metodologia: Cálculo dos pesos: UPAs"}
+
+[Metodologia]{.slide-title}
+
+[Cálculo dos pesos: UPAs]{.custom-subtitle2}
+
+<hr>
+
+::: body-text-s
+
+$$
+w_{hi}^{ano} = \frac{1}{m_g} \times \frac{N_g}{N_{gi}} \times \frac{\sum_{\substack{i \in h}} w_{gi}}{\sum_{\substack{i \in h \\ i \in ano}} w_{gi}}
+$$
+
+Onde:
+
+- $\sum_{i \in h} w_{gi}$ é o total dos pesos das UPAs do estrato $h$;
+- E este é o total dos pesos das UPAs do estrato $h$ com domicílios em uma determinada entrevista no ano de interesse: 
+$$ \sum_{\substack{i \in h \\ i \in ano}} w_{gi} $$ 
+
+:::
+
+
+--- 
+
+## {#metodos3 data-menu-title="Metodologia: Cálculo dos pesos: domicílios"}
+
+[Metodologia]{.slide-title}
+
+[Cálculo dos pesos: domicílios]{.custom-subtitle2}
+
+<hr>
+
+::: body-text-s
+
+O cálculo dos pesos dos domicílios e de todos os seus moradores é feito
+em três etapas: peso básico, peso com ajuste por não resposta e peso com
+ajuste por calibração.
+
+
+:::
+
+--- 
+
+## {#metodos3 data-menu-title="Metodologia: Estimadores"}
+
+[Metodologia]{.slide-title}
+
+[Estimadores]{.custom-subtitle2}
+
+<hr>
+
+::: body-text-s
+
+:::
