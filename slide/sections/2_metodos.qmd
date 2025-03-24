@@ -98,6 +98,55 @@ As Unidades Primárias de Amostragem (UPAs) são selecionadas com **probabilidad
 :::
 
 
+---
+
+## {#metodos3 data-menu-title="Metodologia: Estratificação"}
+
+[Metodologia]{.slide-title}
+
+[Estratificação]{.custom-subtitle2}
+
+<hr>
+
+::: body-text-s
+
+A medida de distância associada a pares de UPAs utilizada no método de estratificação
+estatística é dada por:
+
+$$
+d(i, i') = N_i \cdot N_{i'} \left( \frac{Y_i}{N_i} - \frac{Y_{i'}}{N_{i'}} \right)^2
+$$
+
+Onde:
+
+- $N_i$ é o número de domicílios na UPA $i$;
+- $N_{i'}$ é o número de domicílios na UPA $i'$;
+- $Y_i$ é o total da característica de interesse $y$ na UPA $i$;
+- $Y_{i'}$ é o total da característica de interesse $y$ na UPA $i'$; e
+- $y$ é o rendimento total dos domicílios.
+
+
+:::
+
+---
+
+
+## {#metodos3 data-menu-title="Metodologia: Esquema de rotação"}
+
+[Metodologia]{.slide-title}
+
+[Esquema de rotação]{.custom-subtitle2}
+
+<hr>
+
+::: {.center}
+
+_Figura 1: Esquema de rotação 1-2(5)._
+
+
+![](esquema_rotacao.png){width=65% fig-align="center"}
+:::
+
 --- 
 
 ## {#metodos3 data-menu-title="Metodologia: Tamanho da amostra"}
@@ -262,6 +311,8 @@ grupo, de acordo com os tamanhos previamente calculados.
 
 ::: body-text-s
 
+O peso básico para estimar características que serão produzidas a cada trimestre é dado por:
+
 $$w_{gi} = \frac{1}{m_g} \times \frac{N_g}{N_{gi}}$$
 :::
 
@@ -285,6 +336,12 @@ sem entrevistas realizadas e vagos no grupo de rotação $g$.
 <hr>
 
 ::: body-text-s
+
+Para as estimativas calculadas apenas uma vez por ano, com
+acumulação das amostras trimestrais não sobrepostas de UPAs, o cálculo dos
+pesos leva em conta a utilização de apenas 80% da amostra. Com isso os
+pesos das UPAs são corrigidos para compensar a parte da amostra que não
+entra na estimação da seguinte maneira:
 
 $$
 w_{hi}^{ano} = \frac{1}{m_g} \times \frac{N_g}{N_{gi}} \times \frac{\sum_{\substack{i \in h}} w_{gi}}{\sum_{\substack{i \in h \\ i \in ano}} w_{gi}}
@@ -315,12 +372,131 @@ O cálculo dos pesos dos domicílios e de todos os seus moradores é feito
 em três etapas: peso básico, peso com ajuste por não resposta e peso com
 ajuste por calibração.
 
+**1. Peso básico;**
+
+**2. Peso com ajuste por não resposta;**
+
+**3. Peso ajustado por calibração.**
+
+:::
+
+
+--- 
+
+## {#metodos3 data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso básico"}
+
+[Metodologia]{.slide-title}
+
+[Cálculo dos pesos: domicílios - peso básico]{.custom-subtitle2}
+
+<hr>
+
+::: body-text-s
+
+O peso básico do domicílio é obtido pela expressão:
+
+$$
+w_{gij} = w_{gi} \times w_{j|gi} = \frac{1}{m_g} \times \frac{N_g}{N_{gi}} \times \frac{N'_{gi}}{n_{gi}}
+$$
+
+Onde:
+
+- $N'_{gi}$ é o número de domicílios particulares permanentes ocupados e fechados na UPA $i$ do grupo de rotação $g$, dados da última atualização do CNEFE;
+
+- $n_{gi}$ é o número de domicílios selecionados na UPA $i$ do grupo de rotação $g$.
+
+ - E os domicílios são selecionados com probabilidade igual em cada UPA, assim o peso dos domicílios dentro da UPA é dado por:
+
+$$
+w_{j|gi} = \frac{N'_{gi}}{n_{gi}}
+$$
 
 :::
 
 --- 
 
-## {#metodos3 data-menu-title="Metodologia: Estimadores"}
+## {#metodos3 data-menu-title="Metodologia: Cálculo dos pesos: domicílios - com ajuste por não resposta"}
+
+[Metodologia]{.slide-title}
+
+[Cálculo dos pesos: domicílios - peso com ajuste por não resposta]{.custom-subtitle2}
+
+<hr>
+
+::: body-text-s
+
+Após a determinação do peso básico, ele é ajustado para compensar as
+perdas de entrevistas por não resposta, ou seja, entrevistas não realizadas por
+recusa do informante, por não contato com o morador ou por outro motivo para
+perda em domicílios ocupados.
+
+A fórmula utilizada é:
+
+$$
+w_{gij}^* = \frac{1}{m_g} \times \frac{N_g}{N_{gi}} \times \frac{N_{gi}^*}{n_{gi}} \times \frac{n_{gi}^*}{n'_{gi}}
+$$
+
+Onde:
+
+- $n_{gi}^*$ é o número de domicílios selecionados com morador na UPA $i$ do grupo de rotação $g$;
+- $n'_{gi}$ é o número de domicílios selecionados com entrevista realizada na UPA $i$ do grupo de rotação $g$.
+:::
+
+--- 
+
+## {#metodos3 data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso ajustado por calibração"}
+
+[Metodologia]{.slide-title}
+
+[Cálculo dos pesos: domicílios - peso ajustado por calibração]{.custom-subtitle2}
+
+<hr>
+
+::: body-text-s
+
+Consiste em ajustar os pesos e estimativas baseado em alguma fonte de informação de confiança, no caso da PNADC é utilizado como calibração as estimativas populacionais produzidas pela Coordenação de População e Indicadores Sociais (COPIS).
+
+Os pesos para estimação trimestral são calibrados para a população do dia 15 do mês do meio do trimestre, e são dados por
+
+$$
+w_{gij'} = \frac{1}{m_g} \cdot \frac{N_g}{N_{gi}} \cdot \frac{N_{gi}^*}{n_{gi}} \cdot \frac{n_{gi}^*}{n'_{gi}} \cdot \frac{P_{a}^{tri}}{\hat{P}_{a}^{tri}}
+$$
+
+onde:
+
+- $P_{a}^{tri}$ é a estimativa populacional produzida pela COPIS para o nível geográfico $a$ para o dia 15 do mês do meio do trimestre;
+- $\hat{P}_{a}^{tri}$ é a estimativa populacional obtida com os dados da pesquisa para o nível geográfico $a$ no trimestre.
+
+:::
+
+--- 
+
+## {#metodos3 data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso ajustado por calibração"}
+
+[Metodologia]{.slide-title}
+
+[Cálculo dos pesos: domicílios - peso ajustado por calibração]{.custom-subtitle2}
+
+<hr>
+
+::: body-text-s
+
+Ainda está sendo definido para qual dia do ano os pesos para estimação anual serão calibrados. A expressão a ser utilizada será
+
+$$
+w_{hij}^{ano} = w_{hi}^{ano} \cdot \frac{N_{gi}^*}{n_{gi}} \cdot \frac{n_{gi}^*}{n'_{gi}} \cdot \frac{P_{a}^{ano}}{\hat{P}_{a}^{ano}}
+$$
+
+Onde:
+
+- $P_{a}^{ano}$ é a estimativa populacional produzida pela COPIS para o nível geográfico $a$ para o dia do ano a ser definido;
+- $\hat{P}_{a}^{ano}$ é a estimativa populacional obtida com os dados da pesquisa para o nível geográfico $A$ no ano.
+    
+:::
+
+--- 
+
+## {#metodos3 data-menu-title="Metodologia: Outros estimadores"}
 
 [Metodologia]{.slide-title}
 

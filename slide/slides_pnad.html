@@ -493,11 +493,6 @@
 <p><a href=".\dicionarios_PNAD/dicionario_PNAD.pdf">Acesse as variáveis da PNAD</a></p>
 </div>
 </section>
-<section>
-<section id="metodologia" class="title-slide slide level1 center">
-<h1>Metodologia</h1>
-
-</section>
 <section id="metodos1" class="slide level2" data-menu-title="Metodologia: O plano amostral">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
@@ -575,6 +570,40 @@
 </ul></li>
 </ol></li>
 </ul>
+</div>
+</section>
+<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Estratificação">
+<h2></h2>
+<p><span class="slide-title">Metodologia</span></p>
+<p><span class="custom-subtitle2">Estratificação</span></p>
+<hr>
+<div class="body-text-s">
+<p>A medida de distância associada a pares de UPAs utilizada no método de estratificação estatística é dada por:</p>
+<p><span class="math display">\[
+d(i, i') = N_i \cdot N_{i'} \left( \frac{Y_i}{N_i} - \frac{Y_{i'}}{N_{i'}} \right)^2
+\]</span></p>
+<p>Onde:</p>
+<ul>
+<li><span class="math inline">\(N_i\)</span> é o número de domicílios na UPA <span class="math inline">\(i\)</span>;</li>
+<li><span class="math inline">\(N_{i'}\)</span> é o número de domicílios na UPA <span class="math inline">\(i'\)</span>;</li>
+<li><span class="math inline">\(Y_i\)</span> é o total da característica de interesse <span class="math inline">\(y\)</span> na UPA <span class="math inline">\(i\)</span>;</li>
+<li><span class="math inline">\(Y_{i'}\)</span> é o total da característica de interesse <span class="math inline">\(y\)</span> na UPA <span class="math inline">\(i'\)</span>; e</li>
+<li><span class="math inline">\(y\)</span> é o rendimento total dos domicílios.</li>
+</ul>
+</div>
+</section>
+<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Esquema de rotação">
+<h2></h2>
+<p><span class="slide-title">Metodologia</span></p>
+<p><span class="custom-subtitle2">Esquema de rotação</span></p>
+<hr>
+<div class="center">
+<p><em>Figura 1: Esquema de rotação 1-2(5).</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="esquema_rotacao.png" class="quarto-figure quarto-figure-center" style="width:65.0%"></p>
+</figure>
+</div>
 </div>
 </section>
 <section id="metodos3" class="slide level2" data-menu-title="Metodologia: Tamanho da amostra">
@@ -675,6 +704,7 @@ V\bigl(\hat{Y}\bigr) = \sum_{h=1}^L \frac{1}{m_h} \Bigg[ \sum_{i=1}^{M_h} \frac{
 <p><span class="custom-subtitle2">Cálculo dos pesos: UPAs</span></p>
 <hr>
 <div class="body-text-s">
+<p>O peso básico para estimar características que serão produzidas a cada trimestre é dado por:</p>
 <p><span class="math display">\[w_{gi} = \frac{1}{m_g} \times \frac{N_g}{N_{gi}}\]</span></p>
 </div>
 <ul>
@@ -689,13 +719,14 @@ V\bigl(\hat{Y}\bigr) = \sum_{h=1}^L \frac{1}{m_h} \Bigg[ \sum_{i=1}^{M_h} \frac{
 <p><span class="custom-subtitle2">Cálculo dos pesos: UPAs</span></p>
 <hr>
 <div class="body-text-s">
+<p>Para as estimativas calculadas apenas uma vez por ano, com acumulação das amostras trimestrais não sobrepostas de UPAs, o cálculo dos pesos leva em conta a utilização de apenas 80% da amostra. Com isso os pesos das UPAs são corrigidos para compensar a parte da amostra que não entra na estimação da seguinte maneira:</p>
 <p><span class="math display">\[
 w_{hi}^{ano} = \frac{1}{m_g} \times \frac{N_g}{N_{gi}} \times \frac{\sum_{\substack{i \in h}} w_{gi}}{\sum_{\substack{i \in h \\ i \in ano}} w_{gi}}
 \]</span></p>
 <p>Onde:</p>
 <ul>
 <li><span class="math inline">\(\sum_{i \in h} w_{gi}\)</span> é o total dos pesos das UPAs do estrato <span class="math inline">\(h\)</span>;</li>
-<li>e este é o total dos pesos das UPAs do estrato <span class="math inline">\(h\)</span> com domicílios em uma determinada entrevista no ano de interesse: <span class="math display">\[ \sum_{\substack{i \in h \\ i \in ano}} w_{gi} \]</span></li>
+<li>E este é o total dos pesos das UPAs do estrato <span class="math inline">\(h\)</span> com domicílios em uma determinada entrevista no ano de interesse: <span class="math display">\[ \sum_{\substack{i \in h \\ i \in ano}} w_{gi} \]</span></li>
 </ul>
 </div>
 </section>
@@ -706,9 +737,86 @@ w_{hi}^{ano} = \frac{1}{m_g} \times \frac{N_g}{N_{gi}} \times \frac{\sum_{\subst
 <hr>
 <div class="body-text-s">
 <p>O cálculo dos pesos dos domicílios e de todos os seus moradores é feito em três etapas: peso básico, peso com ajuste por não resposta e peso com ajuste por calibração.</p>
+<p><strong>1. Peso básico;</strong></p>
+<p><strong>2. Peso com ajuste por não resposta;</strong></p>
+<p><strong>3. Peso ajustado por calibração.</strong></p>
 </div>
 </section>
-<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Estimadores">
+<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso básico">
+<h2></h2>
+<p><span class="slide-title">Metodologia</span></p>
+<p><span class="custom-subtitle2">Cálculo dos pesos: domicílios - peso básico</span></p>
+<hr>
+<div class="body-text-s">
+<p>O peso básico do domicílio é obtido pela expressão:</p>
+<p><span class="math display">\[
+w_{gij} = w_{gi} \times w_{j|gi} = \frac{1}{m_g} \times \frac{N_g}{N_{gi}} \times \frac{N'_{gi}}{n_{gi}}
+\]</span></p>
+<p>Onde:</p>
+<ul>
+<li><p><span class="math inline">\(N'_{gi}\)</span> é o número de domicílios particulares permanentes ocupados e fechados na UPA <span class="math inline">\(i\)</span> do grupo de rotação <span class="math inline">\(g\)</span>, dados da última atualização do CNEFE;</p></li>
+<li><p><span class="math inline">\(n_{gi}\)</span> é o número de domicílios selecionados na UPA <span class="math inline">\(i\)</span> do grupo de rotação <span class="math inline">\(g\)</span>.</p></li>
+<li><p>E os domicílios são selecionados com probabilidade igual em cada UPA, assim o peso dos domicílios dentro da UPA é dado por:</p></li>
+</ul>
+<p><span class="math display">\[
+w_{j|gi} = \frac{N'_{gi}}{n_{gi}}
+\]</span></p>
+</div>
+</section>
+<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios - com ajuste por não resposta">
+<h2></h2>
+<p><span class="slide-title">Metodologia</span></p>
+<p><span class="custom-subtitle2">Cálculo dos pesos: domicílios - peso com ajuste por não resposta</span></p>
+<hr>
+<div class="body-text-s">
+<p>Após a determinação do peso básico, ele é ajustado para compensar as perdas de entrevistas por não resposta, ou seja, entrevistas não realizadas por recusa do informante, por não contato com o morador ou por outro motivo para perda em domicílios ocupados.</p>
+<p>A fórmula utilizada é:</p>
+<p><span class="math display">\[
+w_{gij}^* = \frac{1}{m_g} \times \frac{N_g}{N_{gi}} \times \frac{N_{gi}^*}{n_{gi}} \times \frac{n_{gi}^*}{n'_{gi}}
+\]</span></p>
+<p>Onde:</p>
+<ul>
+<li><span class="math inline">\(n_{gi}^*\)</span> é o número de domicílios selecionados com morador na UPA <span class="math inline">\(i\)</span> do grupo de rotação <span class="math inline">\(g\)</span>;</li>
+<li><span class="math inline">\(n'_{gi}\)</span> é o número de domicílios selecionados com entrevista realizada na UPA <span class="math inline">\(i\)</span> do grupo de rotação <span class="math inline">\(g\)</span>.</li>
+</ul>
+</div>
+</section>
+<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso ajustado por calibração">
+<h2></h2>
+<p><span class="slide-title">Metodologia</span></p>
+<p><span class="custom-subtitle2">Cálculo dos pesos: domicílios - peso ajustado por calibração</span></p>
+<hr>
+<div class="body-text-s">
+<p>Consiste em ajustar os pesos e estimativas baseado em alguma fonte de informação de confiança, no caso da PNADC é utilizado como calibração as estimativas populacionais produzidas pela Coordenação de População e Indicadores Sociais (COPIS).</p>
+<p>Os pesos para estimação trimestral são calibrados para a população do dia 15 do mês do meio do trimestre, e são dados por</p>
+<p><span class="math display">\[
+w_{gij'} = \frac{1}{m_g} \cdot \frac{N_g}{N_{gi}} \cdot \frac{N_{gi}^*}{n_{gi}} \cdot \frac{n_{gi}^*}{n'_{gi}} \cdot \frac{P_{a}^{tri}}{\hat{P}_{a}^{tri}}
+\]</span></p>
+<p>onde:</p>
+<ul>
+<li><span class="math inline">\(P_{a}^{tri}\)</span> é a estimativa populacional produzida pela COPIS para o nível geográfico <span class="math inline">\(a\)</span> para o dia 15 do mês do meio do trimestre;</li>
+<li><span class="math inline">\(\hat{P}_{a}^{tri}\)</span> é a estimativa populacional obtida com os dados da pesquisa para o nível geográfico <span class="math inline">\(a\)</span> no trimestre.</li>
+</ul>
+</div>
+</section>
+<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso ajustado por calibração">
+<h2></h2>
+<p><span class="slide-title">Metodologia</span></p>
+<p><span class="custom-subtitle2">Cálculo dos pesos: domicílios - peso ajustado por calibração</span></p>
+<hr>
+<div class="body-text-s">
+<p>Ainda está sendo definido para qual dia do ano os pesos para estimação anual serão calibrados. A expressão a ser utilizada será</p>
+<p><span class="math display">\[
+w_{hij}^{ano} = w_{hi}^{ano} \cdot \frac{N_{gi}^*}{n_{gi}} \cdot \frac{n_{gi}^*}{n'_{gi}} \cdot \frac{P_{a}^{ano}}{\hat{P}_{a}^{ano}}
+\]</span></p>
+<p>Onde:</p>
+<ul>
+<li><span class="math inline">\(P_{a}^{ano}\)</span> é a estimativa populacional produzida pela COPIS para o nível geográfico <span class="math inline">\(a\)</span> para o dia do ano a ser definido;</li>
+<li><span class="math inline">\(\hat{P}_{a}^{ano}\)</span> é a estimativa populacional obtida com os dados da pesquisa para o nível geográfico <span class="math inline">\(A\)</span> no ano.</li>
+</ul>
+</div>
+</section>
+<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Outros estimadores">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Estimadores</span></p>
@@ -716,11 +824,6 @@ w_{hi}^{ano} = \frac{1}{m_g} \times \frac{N_g}{N_{gi}} \times \frac{\sum_{\subst
 <div class="body-text-s">
 
 </div>
-</section></section>
-<section>
-<section id="metodologia-1" class="title-slide slide level1 center">
-<h1>Metodologia</h1>
-
 </section>
 <section id="aplicacoes" class="slide level2" data-menu-title="Aplicações">
 <h2></h2>
@@ -781,7 +884,7 @@ w_{hi}^{ano} = \frac{1}{m_g} \times \frac{N_g}{N_{gi}} \times \frac{\sum_{\subst
 
 </div>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 

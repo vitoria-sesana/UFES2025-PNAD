@@ -52,13 +52,9 @@ Slides disponíveis em [GitHub {{< fa brands github title="GitHub Octocat logo" 
 
 {{< include sections/1_2_introducao_vitoria.qmd >}}
 
-# Metodologia
-
 ---
 
 {{< include sections/2_metodos.qmd >}}
-
-# Metodologia
 
 ---
 
