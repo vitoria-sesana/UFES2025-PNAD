@@ -55,3 +55,15 @@ format:
 :::
 
 ---
+
+## {#series_historicas data-menu-title="Séries Históricas"} 
+
+[Séries Históricas]{.slide-title}
+
+[Taxa de desocupação]{.custom-subtitle2}
+
+<hr>
+
+![](https://imgur.com/6tZs45Y)
+
+---
