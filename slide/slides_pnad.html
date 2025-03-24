@@ -8,7 +8,7 @@
 <link href="slides_pnad_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="slides_pnad_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="slides_pnad_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.57">
+  <meta name="generator" content="quarto-1.3.450">
 
   <title>slides_pnad</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -33,8 +33,6 @@
   <link href="slides_pnad_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="slides_pnad_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="slides_pnad_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="slides_pnad_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="slides_pnad_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
   <link href="slides_pnad_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -157,8 +155,7 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    padding-bottom: 0.5rem;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -337,10 +334,11 @@
 <p><span class="custom-subtitle3">Beatriz Silveira</span><br> <span class="custom-subtitle3">Gabriel Augusto</span><br> <span class="custom-subtitle3">Vitória Sesana</span><br> <span class="custom-subtitle3">Gregório Lage</span></p>
 </div><div class="column" style="width:50%;">
 <p><span class="custom-subtitle3">Universidade Federal do Espírito Santo</span><br></p>
-</div></div>
+</div>
+</div>
 <p><br></p>
 <div class="title-footer">
-<p>Slides disponíveis em <a href="https://github.com/vitoria-sesana/UFES2025-PNAD">GitHub {{&lt; fa brands github "GitHub Octocat logo" &gt;}}</a></p>
+<p>Slides disponíveis em <a href="https://github.com/vitoria-sesana/UFES2025-PNAD">GitHub </a></p>
 </div>
 </section>
 <section id="topicos" class="slide level2" data-menu-title="Tópicos">
@@ -490,7 +488,7 @@
 <li><p>Peso Amostral;</p></li>
 <li><p>Períodos de Sobreposição.</p></li>
 </ul>
-<p><a href=".\dicionarios_PNAD/dicionario_PNAD.pdf">Acesse as variáveis da PNAD</a></p>
+<p><a href="/dicionarios_PNAD/dicionario_PNAD.pdf">Acesse as variáveis da PNAD</a></p>
 </div>
 </section>
 <section id="metodos1" class="slide level2" data-menu-title="Metodologia: O plano amostral">
@@ -536,16 +534,14 @@
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Estratificação</span></p>
 <hr>
-<div class="body-text-s">
-<ul>
-<li><p><strong>Objetivo:</strong> Garantir representatividade da amostra em diferentes níveis geográficos e socioeconômicos.</p></li>
-<li><p><strong>Etapas de Estratificação:</strong></p>
-<ol type="1">
-<li><p><strong>Divisão Administrativa:</strong></p>
+<div class="body-text-m">
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="divisão-administrativa">1. <strong>Divisão Administrativa</strong></h3>
 <ul>
 <li>Unidades da Federação (UFs).</li>
 <li>Regiões Metropolitanas (RM) e RIDEs.</li>
-<li>5 Grupos:
+<li><strong>5 Grupos:</strong>
 <ol type="1">
 <li>Capital</li>
 <li>Demais municípios das RM/RIDE</li>
@@ -553,26 +549,34 @@
 <li>Municípios de RIDE com sede em outra UF</li>
 <li>Demais municípios da UF</li>
 </ol></li>
-</ul></li>
-<li><p><strong>Geográfica Espacial:</strong></p>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="geográfica-espacial">2. <strong>Geográfica Espacial</strong></h3>
 <ul>
 <li>Separação por microrregiões, bairros e distritos.</li>
 <li>Foco em diferenças regionais.</li>
-</ul></li>
-<li><p><strong>Situação dos Domicílios:</strong></p>
+</ul>
+<h3 id="situação-dos-domicílios">3. <strong>Situação dos Domicílios</strong></h3>
 <ul>
 <li>Urbano vs.&nbsp;Rural.</li>
-</ul></li>
-<li><p><strong>Estatística:</strong></p>
+</ul>
+<h3 id="estatística">4. <strong>Estatística</strong></h3>
 <ul>
 <li>Homogeneização por rendimento total e número de domicílios.</li>
 <li>Minimização da variância do estimador.</li>
-</ul></li>
-</ol></li>
 </ul>
 </div>
+</div>
+</div>
 </section>
-<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Estratificação">
+<section id="metodos4" class="slide level2" data-menu-title="Métodos: Estratificação">
+<h2></h2>
+<p><span class="slide-title">Metodologia</span></p>
+<p><span class="custom-subtitle2">Estratificação</span></p>
+<hr>
+
+<img data-src="slide/plots/diagrama_estratificacao.png" style="width:50.0%" class="r-stretch quarto-figure-center"><p class="caption">Diagrama de Estratificação</p></section>
+<section id="metodos5" class="slide level2" data-menu-title="Metodologia: Estratificação">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Estratificação</span></p>
@@ -592,7 +596,28 @@ d(i, i') = N_i \cdot N_{i'} \left( \frac{Y_i}{N_i} - \frac{Y_{i'}}{N_{i'}} \righ
 </ul>
 </div>
 </section>
-<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Esquema de rotação">
+<section id="metodos6" class="slide level2" data-menu-title="Métodos: Esquema de Rotação 1-2(5)">
+<h2></h2>
+<p><span class="slide-title">Metodologia</span></p>
+<p><span class="custom-subtitle2">Esquema de Rotação 1-2(5)</span></p>
+<hr>
+<div class="body-text-m">
+<ul>
+<li><strong>Funcionamento do Esquema 1-2(5):</strong>
+<ul>
+<li><strong>1º Mês:</strong> Domicílio é entrevistado.</li>
+<li><strong>2º e 3º Meses:</strong> Domicílio fica fora da amostra.</li>
+<li><strong>Ciclo Total:</strong> Repetido <strong>5 vezes</strong> ao longo do tempo.</li>
+</ul></li>
+<li><strong>Grupos de Rotação:</strong>
+<ul>
+<li>As UPAs são divididas em <strong>15 grupos de rotação</strong>.</li>
+<li>A cada mês, <strong>5 grupos</strong> são entrevistados.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="metodos7" class="slide level2" data-menu-title="Metodologia: Esquema de rotação">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Esquema de rotação</span></p>
@@ -601,12 +626,12 @@ d(i, i') = N_i \cdot N_{i'} \left( \frac{Y_i}{N_i} - \frac{Y_{i'}}{N_{i'}} \righ
 <p><em>Figura 1: Esquema de rotação 1-2(5).</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="esquema_rotacao.png" class="quarto-figure quarto-figure-center" style="width:65.0%"></p>
+<p><img data-src="esquema_rotacao.png" style="width:65.0%"></p>
 </figure>
 </div>
 </div>
 </section>
-<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Tamanho da amostra">
+<section id="metodos8" class="slide level2" data-menu-title="Metodologia: Tamanho da amostra">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Tamanho da amostra</span></p>
@@ -629,7 +654,7 @@ Y = \sum_{h=1}^{L} \sum_{i=1}^{M_h} \sum_{j=1}^{N_{hi}} Y_{hij} = \sum_{h=1}^{L}
 </ul>
 </div>
 </section>
-<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Tamanho da amostra">
+<section id="metodos9" class="slide level2" data-menu-title="Metodologia: Tamanho da amostra">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Tamanho da amostra</span></p>
@@ -644,7 +669,7 @@ V\bigl(\hat{Y}\bigr) = \sum_{h=1}^L \frac{1}{m_h} \Bigg[ \sum_{i=1}^{M_h} \frac{
 \]</span></p>
 </div>
 </section>
-<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Tamanho da amostra">
+<section id="metodos10" class="slide level2" data-menu-title="Metodologia: Tamanho da amostra">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Tamanho da amostra</span></p>
@@ -663,7 +688,7 @@ V\bigl(\hat{Y}\bigr) = \sum_{h=1}^L \frac{1}{m_h} \Bigg[ \sum_{i=1}^{M_h} \frac{
 </ul>
 </div>
 </section>
-<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Alocação do tamanho da amostra">
+<section id="metodos11" class="slide level2" data-menu-title="Metodologia: Alocação do tamanho da amostra">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Alocação do tamanho da amostra</span></p>
@@ -672,7 +697,7 @@ V\bigl(\hat{Y}\bigr) = \sum_{h=1}^L \frac{1}{m_h} \Bigg[ \sum_{i=1}^{M_h} \frac{
 
 </div>
 </section>
-<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Seleção das unidades primárias de amostragem">
+<section id="metodos12" class="slide level2" data-menu-title="Metodologia: Seleção das unidades primárias de amostragem">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Seleção das unidades primárias de amostragem</span></p>
@@ -689,7 +714,7 @@ V\bigl(\hat{Y}\bigr) = \sum_{h=1}^L \frac{1}{m_h} \Bigg[ \sum_{i=1}^{M_h} \frac{
 <p>As UPAs são, então, ordenadas de forma crescente segundo a quantidade <span class="math inline">\(Q_{i}\)</span>, e são selecionadas para a amostra as primeiras de cada grupo, de acordo com os tamanhos previamente calculados.</p>
 </div>
 </section>
-<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Rotação da amostra e Seleção dos domicílios">
+<section id="metodos13" class="slide level2" data-menu-title="Metodologia: Rotação da amostra e Seleção dos domicílios">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Rotação da amostra e Seleção dos domicílios</span></p>
@@ -698,7 +723,7 @@ V\bigl(\hat{Y}\bigr) = \sum_{h=1}^L \frac{1}{m_h} \Bigg[ \sum_{i=1}^{M_h} \frac{
 
 </div>
 </section>
-<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: UPAs">
+<section id="metodos14" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: UPAs">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Cálculo dos pesos: UPAs</span></p>
@@ -713,7 +738,7 @@ V\bigl(\hat{Y}\bigr) = \sum_{h=1}^L \frac{1}{m_h} \Bigg[ \sum_{i=1}^{M_h} \frac{
 <li><p><span class="math inline">\(N_{g}\)</span> é o número de domicílios particulares permanentes ocupados, ocupados sem entrevistas realizadas e vagos no grupo de rotação <span class="math inline">\(g\)</span>.</p></li>
 </ul>
 </section>
-<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: UPAs">
+<section id="metodos15" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: UPAs">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Cálculo dos pesos: UPAs</span></p>
@@ -730,7 +755,7 @@ w_{hi}^{ano} = \frac{1}{m_g} \times \frac{N_g}{N_{gi}} \times \frac{\sum_{\subst
 </ul>
 </div>
 </section>
-<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios">
+<section id="metodos16" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Cálculo dos pesos: domicílios</span></p>
@@ -742,7 +767,7 @@ w_{hi}^{ano} = \frac{1}{m_g} \times \frac{N_g}{N_{gi}} \times \frac{\sum_{\subst
 <p><strong>3. Peso ajustado por calibração.</strong></p>
 </div>
 </section>
-<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso básico">
+<section id="metodos17" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso básico">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Cálculo dos pesos: domicílios - peso básico</span></p>
@@ -763,7 +788,7 @@ w_{j|gi} = \frac{N'_{gi}}{n_{gi}}
 \]</span></p>
 </div>
 </section>
-<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios - com ajuste por não resposta">
+<section id="metodos18" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios - com ajuste por não resposta">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Cálculo dos pesos: domicílios - peso com ajuste por não resposta</span></p>
@@ -781,7 +806,7 @@ w_{gij}^* = \frac{1}{m_g} \times \frac{N_g}{N_{gi}} \times \frac{N_{gi}^*}{n_{gi
 </ul>
 </div>
 </section>
-<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso ajustado por calibração">
+<section id="metodos19" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso ajustado por calibração">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Cálculo dos pesos: domicílios - peso ajustado por calibração</span></p>
@@ -799,7 +824,7 @@ w_{gij'} = \frac{1}{m_g} \cdot \frac{N_g}{N_{gi}} \cdot \frac{N_{gi}^*}{n_{gi}} 
 </ul>
 </div>
 </section>
-<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso ajustado por calibração">
+<section id="metodos20" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso ajustado por calibração">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Cálculo dos pesos: domicílios - peso ajustado por calibração</span></p>
@@ -816,7 +841,7 @@ w_{hij}^{ano} = w_{hi}^{ano} \cdot \frac{N_{gi}^*}{n_{gi}} \cdot \frac{n_{gi}^*}
 </ul>
 </div>
 </section>
-<section id="metodos3" class="slide level2" data-menu-title="Metodologia: Outros estimadores">
+<section id="metodos21" class="slide level2" data-menu-title="Metodologia: Outros estimadores">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Estimadores</span></p>
@@ -879,10 +904,8 @@ w_{hij}^{ano} = w_{hi}^{ano} \cdot \frac{N_{gi}^*}{n_{gi}} \cdot \frac{n_{gi}^*}
 <div class="slide-title center-text">
 <p>Obrigada pela atenção!</p>
 </div>
-<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
-</div>
 </div>
 </section>
     </div>
@@ -895,7 +918,6 @@ w_{hij}^{ano} = w_{hi}^{ano} \cdot \frac{N_{gi}^*}{n_{gi}} \cdot \frac{n_{gi}^*}
   <script src="slides_pnad_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="slides_pnad_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="slides_pnad_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="slides_pnad_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
   <script src="slides_pnad_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -912,12 +934,12 @@ w_{hij}^{ano} = w_{hi}^{ano} \cdot \frac{N_{gi}^*}{n_{gi}} \cdot \frac{n_{gi}^*}
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
+'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'chalkboard': {"buttons":true},
+'menu': {"side":"right","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true,"width":"wide"},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -941,7 +963,7 @@ w_{hij}^{ano} = w_{hi}^{ano} \cdot \frac{N_{gi}^*}{n_{gi}} \cdot \frac{n_{gi}^*}
         slideNumber: 'c/t',
 
         // 'all', 'print', or 'speaker'
-        showSlideNumber: 'all',
+        showSlideNumber: 'print',
 
         // Add the current slide number to the URL hash so that reloading the
         // page/copying the URL will return you to the same slide
@@ -1088,7 +1110,7 @@ w_{hij}^{ano} = w_{hi}^{ano} \cdot \frac{N_{gi}^*}{n_{gi}} \cdot \frac{n_{gi}^*}
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
           RevealMath,
           RevealNotes,
@@ -1129,7 +1151,18 @@ w_{hij}^{ano} = w_{hi}^{ano} \cdot \frac{N_{gi}^*}{n_{gi}} \cdot \frac{n_{gi}^*}
         }
         return false;
       }
-      const onCopySuccess = function(e) {
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1161,50 +1194,11 @@ w_{hij}^{ano} = w_{hi}^{ano} \cdot \frac{N_{gi}^*}{n_{gi}} \cdot \frac{n_{gi}^*}
         }, 1000);
         // clear code selection
         e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
       });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        // For code content inside modals, clipBoardJS needs to be initialized with a container option
-        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-        }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
-            }
-          }
-        }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      function tippyHover(el, contentFn) {
         const config = {
           allowHTML: true,
+          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1214,17 +1208,8 @@ w_{hij}^{ano} = w_{hi}^{ano} \cdot \frac{N_{gi}^*}{n_{gi}} \cdot \frac{n_{gi}^*}
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start',
+          placement: 'bottom-start'
         };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -1238,11 +1223,7 @@ w_{hij}^{ano} = w_{hi}^{ano} \cdot \frac{N_{gi}^*}{n_{gi}} \cdot \frac{n_{gi}^*}
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
-          }
+          return note.innerHTML;
         });
       }
       const findCites = (el) => {

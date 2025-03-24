@@ -65,42 +65,57 @@ As Unidades Primárias de Amostragem (UPAs) são selecionadas com **probabilidad
 
 <hr>
 
-::: body-text-s
+::: {.body-text-m}
 
-- **Objetivo:** Garantir representatividade da amostra em diferentes níveis geográficos e socioeconômicos.
+::: {.columns}
 
-- **Etapas de Estratificação:**
-
-  1. **Divisão Administrativa:**
-     - Unidades da Federação (UFs).
-     - Regiões Metropolitanas (RM) e RIDEs.
-     - 5 Grupos:
-       1. Capital
-       2. Demais municípios das RM/RIDE
-       3. Municípios de expansão metropolitana
-       4. Municípios de RIDE com sede em outra UF
-       5. Demais municípios da UF
-
-  2. **Geográfica Espacial:**
-  
-     - Separação por microrregiões, bairros e distritos.
-     - Foco em diferenças regionais.
-
-  3. **Situação dos Domicílios:**
-  
-     - Urbano vs. Rural.
-
-  4. **Estatística:**
-  
-     - Homogeneização por rendimento total e número de domicílios.
-     - Minimização da variância do estimador.
+::: {.column width="50%"}
+### 1. **Divisão Administrativa**
+- Unidades da Federação (UFs).
+- Regiões Metropolitanas (RM) e RIDEs.
+- **5 Grupos:**
+  1. Capital
+  2. Demais municípios das RM/RIDE
+  3. Municípios de expansão metropolitana
+  4. Municípios de RIDE com sede em outra UF
+  5. Demais municípios da UF
 
 :::
+
+::: {.column width="50%"}
+
+### 2. **Geográfica Espacial**
+- Separação por microrregiões, bairros e distritos.
+- Foco em diferenças regionais.
+
+### 3. **Situação dos Domicílios**
+- Urbano vs. Rural.
+
+### 4. **Estatística**
+- Homogeneização por rendimento total e número de domicílios.
+- Minimização da variância do estimador.
+:::
+
+:::
+
+:::
+
+---
+
+## {#metodos4 data-menu-title="Métodos: Estratificação"}
+
+[Metodologia]{.slide-title}
+
+[Estratificação]{.custom-subtitle2}
+
+<hr>
+
+![Diagrama de Estratificação](slide/plots/diagrama_estratificacao.png){width=50%}
 
 
 ---
 
-## {#metodos3 data-menu-title="Metodologia: Estratificação"}
+## {#metodos5 data-menu-title="Metodologia: Estratificação"}
 
 [Metodologia]{.slide-title}
 
@@ -130,8 +145,30 @@ Onde:
 
 ---
 
+## {#metodos6 data-menu-title="Métodos: Esquema de Rotação 1-2(5)"}
 
-## {#metodos3 data-menu-title="Metodologia: Esquema de rotação"}
+[Metodologia]{.slide-title}
+
+[Esquema de Rotação 1-2(5)]{.custom-subtitle2}
+
+<hr>
+
+::: body-text-m
+
+- **Funcionamento do Esquema 1-2(5):**
+  - **1º Mês:** Domicílio é entrevistado.
+  - **2º e 3º Meses:** Domicílio fica fora da amostra.
+  - **Ciclo Total:** Repetido **5 vezes** ao longo do tempo.
+
+- **Grupos de Rotação:**
+  - As UPAs são divididas em **15 grupos de rotação**.
+  - A cada mês, **5 grupos** são entrevistados.
+  
+:::
+
+---
+
+## {#metodos7 data-menu-title="Metodologia: Esquema de rotação"}
 
 [Metodologia]{.slide-title}
 
@@ -145,11 +182,12 @@ _Figura 1: Esquema de rotação 1-2(5)._
 
 
 ![](esquema_rotacao.png){width=65% fig-align="center"}
+
 :::
 
 --- 
 
-## {#metodos3 data-menu-title="Metodologia: Tamanho da amostra"}
+## {#metodos8 data-menu-title="Metodologia: Tamanho da amostra"}
 
 [Metodologia]{.slide-title}
 
@@ -185,7 +223,7 @@ Em que:
 
 --- 
 
-## {#metodos3 data-menu-title="Metodologia: Tamanho da amostra"}
+## {#metodos9 data-menu-title="Metodologia: Tamanho da amostra"}
 
 [Metodologia]{.slide-title}
 
@@ -212,7 +250,7 @@ $$
 
 --- 
 
-## {#metodos3 data-menu-title="Metodologia: Tamanho da amostra"}
+## {#metodos10 data-menu-title="Metodologia: Tamanho da amostra"}
 
 [Metodologia]{.slide-title}
 
@@ -244,7 +282,7 @@ Onde
 
 --- 
 
-## {#metodos3 data-menu-title="Metodologia: Alocação do tamanho da amostra"}
+## {#metodos11 data-menu-title="Metodologia: Alocação do tamanho da amostra"}
 
 [Metodologia]{.slide-title}
 
@@ -259,7 +297,7 @@ Onde
 
 --- 
 
-## {#metodos3 data-menu-title="Metodologia: Seleção das unidades primárias de amostragem"}
+## {#metodos12 data-menu-title="Metodologia: Seleção das unidades primárias de amostragem"}
 
 [Metodologia]{.slide-title}
 
@@ -287,7 +325,7 @@ grupo, de acordo com os tamanhos previamente calculados.
 
 --- 
 
-## {#metodos3 data-menu-title="Metodologia: Rotação da amostra e Seleção dos domicílios"}
+## {#metodos13 data-menu-title="Metodologia: Rotação da amostra e Seleção dos domicílios"}
 
 [Metodologia]{.slide-title}
 
@@ -301,7 +339,7 @@ grupo, de acordo com os tamanhos previamente calculados.
 
 --- 
 
-## {#metodos3 data-menu-title="Metodologia: Cálculo dos pesos: UPAs"}
+## {#metodos14 data-menu-title="Metodologia: Cálculo dos pesos: UPAs"}
 
 [Metodologia]{.slide-title}
 
@@ -327,7 +365,7 @@ sem entrevistas realizadas e vagos no grupo de rotação $g$.
 
 --- 
 
-## {#metodos3 data-menu-title="Metodologia: Cálculo dos pesos: UPAs"}
+## {#metodos15 data-menu-title="Metodologia: Cálculo dos pesos: UPAs"}
 
 [Metodologia]{.slide-title}
 
@@ -358,7 +396,7 @@ $$ \sum_{\substack{i \in h \\ i \in ano}} w_{gi} $$
 
 --- 
 
-## {#metodos3 data-menu-title="Metodologia: Cálculo dos pesos: domicílios"}
+## {#metodos16 data-menu-title="Metodologia: Cálculo dos pesos: domicílios"}
 
 [Metodologia]{.slide-title}
 
@@ -383,7 +421,7 @@ ajuste por calibração.
 
 --- 
 
-## {#metodos3 data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso básico"}
+## {#metodos17 data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso básico"}
 
 [Metodologia]{.slide-title}
 
@@ -415,7 +453,7 @@ $$
 
 --- 
 
-## {#metodos3 data-menu-title="Metodologia: Cálculo dos pesos: domicílios - com ajuste por não resposta"}
+## {#metodos18 data-menu-title="Metodologia: Cálculo dos pesos: domicílios - com ajuste por não resposta"}
 
 [Metodologia]{.slide-title}
 
@@ -444,7 +482,7 @@ Onde:
 
 --- 
 
-## {#metodos3 data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso ajustado por calibração"}
+## {#metodos19 data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso ajustado por calibração"}
 
 [Metodologia]{.slide-title}
 
@@ -471,7 +509,7 @@ onde:
 
 --- 
 
-## {#metodos3 data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso ajustado por calibração"}
+## {#metodos20 data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso ajustado por calibração"}
 
 [Metodologia]{.slide-title}
 
@@ -496,7 +534,7 @@ Onde:
 
 --- 
 
-## {#metodos3 data-menu-title="Metodologia: Outros estimadores"}
+## {#metodos21 data-menu-title="Metodologia: Outros estimadores"}
 
 [Metodologia]{.slide-title}
 
