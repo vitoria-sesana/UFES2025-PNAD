@@ -94,4 +94,3 @@ format:
 
 ![](https://imgur.com/x1V3dbL)
 
----

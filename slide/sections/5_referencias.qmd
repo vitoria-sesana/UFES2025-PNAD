@@ -1,0 +1,45 @@
+---
+format: 
+  revealjs:
+    slide-number: true
+    code-link: true
+    highlight-style: a11y
+    chalkboard: true
+    
+    # self-contained: true
+    # scrollable: true
+    theme: "meds_themes.scss"
+---
+
+## {#topicos data-menu-title="Referências"}
+
+[Referências]{.slide-title}
+
+<hr>
+
+::: body-text-m
+
+- COCHRAN, W. G. Sampling Techniques. 3. ed. New York: John Wiley, 1977.
+
+
+- COSTA, G. T. L. Coordenação de amostras PPT em Pesquisas Repetidas, utilizando o método de amostragem de
+Pareto. 2007. Dissertação (Mestrado) – Escola Nacional de Ciências Estatísticas, Rio de Janeiro, 2007.
+
+
+- INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA (IBGE). Pesquisa Nacional por Amostra de Domicílios 
+Contínua. 2023. Disponível em:
+https://www.ibge.gov.br/estatisticas/sociais/trabalho/9171-pesquisa-nacional-por-amostra-de-domicilios-continua-mensal.html?=$\&$t=o-que-e. 
+Acesso em: 23 fev. 2025.
+
+
+- INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA (IBGE).
+Pesquisa Nacional por Amostra de Domicílios Contínua: Notas Metodológicas.
+Rio de Janeiro: IBGE, 2014. Disponível em: https://ftp.ibge.gov.br/Trabalho_e_Rendimento/Pesquisa_Nacional_por_Amostra_de_Domicilios_continua/Notas_metodologicas/notas_metodologicas.pdf.
+Acesso em: 10 mar. 2025.
+
+- INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA (IBGE).
+Pesquisa Nacional por Amostra de Domicílios: Conceitos e Métodos.
+Disponível em: https://www.ibge.gov.br/estatisticas/sociais/populacao/9127-pesquisa-nacional-por-amostra-de-domicilios.html?=$\&$t=conceitos-e-metodos. 
+Acesso em: 7 mar. 2025.
+
+:::
