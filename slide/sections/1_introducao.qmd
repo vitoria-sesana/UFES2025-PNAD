@@ -40,8 +40,6 @@ format:
 - Buscava informações a respeito da saúde, demografia, educação, indíces socioeconômicos e trabalho em todo o Brasil.
 :::
 
-GRÁFICO DO ULTIMO ANO DA PNAD
-
 ---
 
 [Introdução]{.slide-title}
@@ -59,7 +57,6 @@ GRÁFICO DO ULTIMO ANO DA PNAD
 
 :::
 
-GRAFICO DA PNADC
 
 ---
 
@@ -78,8 +75,6 @@ GRAFICO DA PNADC
 - PNADC segue atualmente, focada em buscar informações sobre a força de trabalho brasileira.
 
 - Tecnologia
-
-IMAGEM DE UM DMC E UM QUESTIONÁRIO FISICO
 
 :::
 
