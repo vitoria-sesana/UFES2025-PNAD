@@ -10,25 +10,6 @@ format:
     theme: "meds_themes.scss"
 ---
 
-## {#topicos data-menu-title="Tópicos"}
-
-[Introdução]{.slide-title}
-
-<hr>
-
-::: {.body-text-m}
-- Criação da PNAD
-- Renovação para PNADC
-- Diferenças entre PNAD e PNADC
-- Forma de seleção da amostra na PNADC
-- Conquistas da PNAD/PNADC
-- Conceitos da PNADc
-- Variávieis da PNADc
--É possível a análise conjunta entre PNAD e a PNADc
--
-:::
-
----
 
 [Introdução]{.slide-title}
 
@@ -92,8 +73,6 @@ format:
 
 ::: {.body-text-m}
 - Setor Censitário.
-
-- Unidade Primária de Amostragem **(UPA)**.
 
 - Estratifição,  Por Conglomerados e Amostragem Aleatória Simples.
 

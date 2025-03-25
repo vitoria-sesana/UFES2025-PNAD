@@ -17,5 +17,7 @@ format:
 <hr>
 
 ::: body-text-m
-
+Este artigo teve como objetivo analisar a PNADC, uma das pesquisas amostrais mais influentes no Brasil. Como uma pesquisa probabilistica de plano amostral complexo, sua análise permitiu comentar diversos mátodos teóricos
+de estratificação, planejamento amostral e cálculo amostral. Alám de pontuar a importancia politica e histórica das estimativas desenvolvidas, que permitiram embasso ciêntifico para formento de leis e para estatísticas amplamente
+divulgadas por veiculos de comunicação.
 :::
