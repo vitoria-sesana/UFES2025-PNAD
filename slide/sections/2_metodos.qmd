@@ -283,10 +283,33 @@ Onde
     
 :::
 
+---
+
+## {#metodos11 data-menu-title="Metodologia: Tamanho da amostra"}
+
+[Metodologia]{.slide-title}
+
+[Tamanho da amostra]{.custom-subtitle2}
+
+<hr>
+
+::: body-text-s
+
+O número de UPAs selecionado é calculado considerando fixo o número de domicilios selecionados por cada UPA, representado por $\bar{x}$, gerando a seguinte expressão
+$$
+m = -\frac{N \cdot \sum_{h=1}^H \sum_{i=1}^{M_h} \left[ N_{\tilde{h}i} \cdot \left( \widetilde{Y}_{\tilde{h}i}^2 - \widetilde{Y}_{\tilde{h}}^2 \right) - \left[ \left( \frac{N_{\tilde{h}i} - n_{\tilde{h}i}^*}{n_{\tilde{h}i}^*} \right) \cdot \left( 1 - \frac{N_{\tilde{h}i}}{N_{\tilde{h}}} \right) - \left( \frac{N_{\tilde{h}i} - \bar{n}}{\bar{n}} \right) \right] \cdot {\bf s}_{\hat{\bf y}\tilde{h}i}^2 \right]}{\left( CV(\hat{Y}) \cdot \hat{Y} \right)^2}
+$$
+
+Onde:
+
+- $CV(\hat{Y})$ é o coeficiente de variação desejado para a estimativa de interesse;
+- $\hat{Y}$ é a estimativa do total da característica de interesse adquiridas no Censo 2022.
+
+:::
 
 ---
 
-## {#metodos11 data-menu-title="Metodologia: Alocação do tamanho da amostra"}
+## {#metodos12 data-menu-title="Metodologia: Alocação do tamanho da amostra"}
 
 [Metodologia]{.slide-title}
 
@@ -316,7 +339,7 @@ Alocação proporcional ao número de UPAs em cada grupo.
 
 ---
 
-## {#metodos12 data-menu-title="Metodologia: Ajustes no tamanho da amostra"}
+## {#metodos13 data-menu-title="Metodologia: Ajustes no tamanho da amostra"}
 
 [Metodologia]{.slide-title}
 
@@ -332,7 +355,7 @@ Alocação proporcional ao número de UPAs em cada grupo.
 
 --- 
 
-## {#metodos12 data-menu-title="Metodologia: Seleção das unidades primárias de amostragem"}
+## {#metodos14 data-menu-title="Metodologia: Seleção das unidades primárias de amostragem"}
 
 [Metodologia]{.slide-title}
 
@@ -360,7 +383,7 @@ grupo, de acordo com os tamanhos previamente calculados.
 
 --- 
 
-## {#metodos13 data-menu-title="Metodologia: Seleção dos domicílios"}
+## {#metodos15 data-menu-title="Metodologia: Seleção dos domicílios"}
 
 [Metodologia]{.slide-title}
 
@@ -376,7 +399,7 @@ Após a atualização de cadastros dos domicilios realizados pelo Cadastro Nacio
 
 --- 
 
-## {#metodos14 data-menu-title="Metodologia: Cálculo dos pesos: UPAs"}
+## {#metodos16 data-menu-title="Metodologia: Cálculo dos pesos: UPAs"}
 
 [Metodologia]{.slide-title}
 
@@ -402,7 +425,7 @@ sem entrevistas realizadas e vagos no grupo de rotação $g$.
 
 --- 
 
-## {#metodos15 data-menu-title="Metodologia: Cálculo dos pesos: UPAs"}
+## {#metodos17 data-menu-title="Metodologia: Cálculo dos pesos: UPAs"}
 
 [Metodologia]{.slide-title}
 
@@ -433,7 +456,7 @@ $$ \sum_{\substack{i \in h \\ i \in ano}} w_{gi} $$
 
 --- 
 
-## {#metodos16 data-menu-title="Metodologia: Cálculo dos pesos: domicílios"}
+## {#metodos18 data-menu-title="Metodologia: Cálculo dos pesos: domicílios"}
 
 [Metodologia]{.slide-title}
 
@@ -458,7 +481,7 @@ ajuste por calibração.
 
 --- 
 
-## {#metodos17 data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso básico"}
+## {#metodos19 data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso básico"}
 
 [Metodologia]{.slide-title}
 
@@ -490,7 +513,7 @@ $$
 
 --- 
 
-## {#metodos18 data-menu-title="Metodologia: Cálculo dos pesos: domicílios - com ajuste por não resposta"}
+## {#metodos20 data-menu-title="Metodologia: Cálculo dos pesos: domicílios - com ajuste por não resposta"}
 
 [Metodologia]{.slide-title}
 
@@ -519,7 +542,7 @@ Onde:
 
 --- 
 
-## {#metodos19 data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso ajustado por calibração"}
+## {#metodos21 data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso ajustado por calibração"}
 
 [Metodologia]{.slide-title}
 
@@ -546,7 +569,7 @@ onde:
 
 --- 
 
-## {#metodos20 data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso ajustado por calibração"}
+## {#metodos22 data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso ajustado por calibração"}
 
 [Metodologia]{.slide-title}
 
@@ -571,7 +594,7 @@ Onde:
 
 --- 
 
-## {#metodos21 data-menu-title="Metodologia: Outros estimadores"}
+## {#metodos23 data-menu-title="Metodologia: Outros estimadores"}
 
 [Metodologia]{.slide-title}
 

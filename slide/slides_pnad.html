@@ -8,7 +8,7 @@
 <link href="slides_pnad_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="slides_pnad_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="slides_pnad_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.450">
+  <meta name="generator" content="quarto-1.5.57">
 
   <title>slides_pnad</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -155,7 +155,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -334,8 +335,7 @@
 <p><span class="custom-subtitle3">Beatriz Silveira</span><br> <span class="custom-subtitle3">Gabriel Augusto</span><br> <span class="custom-subtitle3">Vitória Sesana</span><br> <span class="custom-subtitle3">Gregório Lage</span></p>
 </div><div class="column" style="width:50%;">
 <p><span class="custom-subtitle3">Universidade Federal do Espírito Santo</span><br></p>
-</div>
-</div>
+</div></div>
 <p><br></p>
 <div class="title-footer">
 <p>Slides disponíveis em <a href="https://github.com/vitoria-sesana/UFES2025-PNAD">GitHub</a></p>
@@ -456,7 +456,7 @@
 <li><p>Variáveis Derivadas;</p></li>
 <li><p>Pesos Replicados.</p></li>
 </ul>
-<p><a href="/dicionarios_PNAD/dicionario_PNADC_microdados_trimestral.xls">Acesse as variáveis da PNADc</a></p>
+<p><a href=".\dicionarios_PNAD/dicionario_PNADC_microdados_trimestral.xls">Acesse as variáveis da PNADc</a></p>
 </div>
 </section>
 <section class="slide level2">
@@ -471,7 +471,7 @@
 <li><p>Peso Amostral;</p></li>
 <li><p>Períodos de Sobreposição.</p></li>
 </ul>
-<p><a href="/dicionarios_PNAD/dicionario_PNAD.pdf">Acesse as variáveis da PNAD</a></p>
+<p><a href=".\dicionarios_PNAD/dicionario_PNAD.pdf">Acesse as variáveis da PNAD</a></p>
 </div>
 </section>
 <section id="metodos1" class="slide level2" data-menu-title="Metodologia: O plano amostral">
@@ -548,8 +548,7 @@
 <li>Homogeneização por rendimento total e número de domicílios.</li>
 <li>Minimização da variância do estimador.</li>
 </ul>
-</div>
-</div>
+</div></div>
 </div>
 </section>
 <section id="metodos4" class="slide level2" data-menu-title="Métodos: Estratificação">
@@ -612,7 +611,7 @@ d(i, i') = N_i \cdot N_{i'} \left( \frac{Y_i}{N_i} - \frac{Y_{i'}}{N_{i'}} \righ
 <p><em>Figura 2: Esquema de rotação 1-2(5).</em></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="esquema_rotacao.png" style="width:65.0%"></p>
+<p><img data-src="esquema_rotacao.png" class="quarto-figure quarto-figure-center" style="width:65.0%"></p>
 </figure>
 </div>
 </div>
@@ -674,7 +673,23 @@ V\bigl(\hat{Y}\bigr) = \sum_{h=1}^L \frac{1}{m_h} \Bigg[ \sum_{i=1}^{M_h} \frac{
 </ul>
 </div>
 </section>
-<section id="metodos11" class="slide level2" data-menu-title="Metodologia: Alocação do tamanho da amostra">
+<section id="metodos11" class="slide level2" data-menu-title="Metodologia: Tamanho da amostra">
+<h2></h2>
+<p><span class="slide-title">Metodologia</span></p>
+<p><span class="custom-subtitle2">Tamanho da amostra</span></p>
+<hr>
+<div class="body-text-s">
+<p>O número de UPAs selecionado é calculado considerando fixo o número de domicilios selecionados por cada UPA, representado por <span class="math inline">\(\bar{x}\)</span>, gerando a seguinte expressão <span class="math display">\[
+m = -\frac{N \cdot \sum_{h=1}^H \sum_{i=1}^{M_h} \left[ N_{\tilde{h}i} \cdot \left( \widetilde{Y}_{\tilde{h}i}^2 - \widetilde{Y}_{\tilde{h}}^2 \right) - \left[ \left( \frac{N_{\tilde{h}i} - n_{\tilde{h}i}^*}{n_{\tilde{h}i}^*} \right) \cdot \left( 1 - \frac{N_{\tilde{h}i}}{N_{\tilde{h}}} \right) - \left( \frac{N_{\tilde{h}i} - \bar{n}}{\bar{n}} \right) \right] \cdot {\bf s}_{\hat{\bf y}\tilde{h}i}^2 \right]}{\left( CV(\hat{Y}) \cdot \hat{Y} \right)^2}
+\]</span></p>
+<p>Onde:</p>
+<ul>
+<li><span class="math inline">\(CV(\hat{Y})\)</span> é o coeficiente de variação desejado para a estimativa de interesse;</li>
+<li><span class="math inline">\(\hat{Y}\)</span> é a estimativa do total da característica de interesse adquiridas no Censo 2022.</li>
+</ul>
+</div>
+</section>
+<section id="metodos12" class="slide level2" data-menu-title="Metodologia: Alocação do tamanho da amostra">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Alocação do tamanho da amostra</span></p>
@@ -696,7 +711,7 @@ V\bigl(\hat{Y}\bigr) = \sum_{h=1}^L \frac{1}{m_h} \Bigg[ \sum_{i=1}^{M_h} \frac{
 </ul>
 </div>
 </section>
-<section id="metodos12" class="slide level2" data-menu-title="Metodologia: Ajustes no tamanho da amostra">
+<section id="metodos13" class="slide level2" data-menu-title="Metodologia: Ajustes no tamanho da amostra">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Ajustes no Tamanho da Amostra</span></p>
@@ -707,7 +722,7 @@ V\bigl(\hat{Y}\bigr) = \sum_{h=1}^L \frac{1}{m_h} \Bigg[ \sum_{i=1}^{M_h} \frac{
 <li><p><strong>Ajuste de Precisão para Capitais:</strong> Garantir que o Coeficiente de Variação (CV) para o total de pessoas desocupadas seja menor que 15%.</p></li>
 </ul>
 </section>
-<section id="metodos12" class="slide level2" data-menu-title="Metodologia: Seleção das unidades primárias de amostragem">
+<section id="metodos14" class="slide level2" data-menu-title="Metodologia: Seleção das unidades primárias de amostragem">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Seleção das unidades primárias de amostragem</span></p>
@@ -724,7 +739,7 @@ V\bigl(\hat{Y}\bigr) = \sum_{h=1}^L \frac{1}{m_h} \Bigg[ \sum_{i=1}^{M_h} \frac{
 <p>As UPAs são, então, ordenadas de forma crescente segundo a quantidade <span class="math inline">\(Q_{i}\)</span>, e são selecionadas para a amostra as primeiras de cada grupo, de acordo com os tamanhos previamente calculados.</p>
 </div>
 </section>
-<section id="metodos13" class="slide level2" data-menu-title="Metodologia: Seleção dos domicílios">
+<section id="metodos15" class="slide level2" data-menu-title="Metodologia: Seleção dos domicílios">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Seleção dos domicílios</span></p>
@@ -733,7 +748,7 @@ V\bigl(\hat{Y}\bigr) = \sum_{h=1}^L \frac{1}{m_h} \Bigg[ \sum_{i=1}^{M_h} \frac{
 <p>Após a atualização de cadastros dos domicilios realizados pelo Cadastro Nacional de Endereços para Fins Estatísticos (CNEFE), realizado trimestralmente. Ocorre a seleção dos domicilios que irão contribuir para a PNADC por meio de Amostragem Aleatória Simples, considerando apenas os domicilios particulares permanentes ocupados cadastrados no CNEFE.</p>
 </div>
 </section>
-<section id="metodos14" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: UPAs">
+<section id="metodos16" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: UPAs">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Cálculo dos pesos: UPAs</span></p>
@@ -748,7 +763,7 @@ V\bigl(\hat{Y}\bigr) = \sum_{h=1}^L \frac{1}{m_h} \Bigg[ \sum_{i=1}^{M_h} \frac{
 <li><p><span class="math inline">\(N_{g}\)</span> é o número de domicílios particulares permanentes ocupados, ocupados sem entrevistas realizadas e vagos no grupo de rotação <span class="math inline">\(g\)</span>.</p></li>
 </ul>
 </section>
-<section id="metodos15" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: UPAs">
+<section id="metodos17" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: UPAs">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Cálculo dos pesos: UPAs</span></p>
@@ -765,7 +780,7 @@ w_{hi}^{ano} = \frac{1}{m_g} \times \frac{N_g}{N_{gi}} \times \frac{\sum_{\subst
 </ul>
 </div>
 </section>
-<section id="metodos16" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios">
+<section id="metodos18" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Cálculo dos pesos: domicílios</span></p>
@@ -777,7 +792,7 @@ w_{hi}^{ano} = \frac{1}{m_g} \times \frac{N_g}{N_{gi}} \times \frac{\sum_{\subst
 <p><strong>3. Peso ajustado por calibração.</strong></p>
 </div>
 </section>
-<section id="metodos17" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso básico">
+<section id="metodos19" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso básico">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Cálculo dos pesos: domicílios - peso básico</span></p>
@@ -798,7 +813,7 @@ w_{j|gi} = \frac{N'_{gi}}{n_{gi}}
 \]</span></p>
 </div>
 </section>
-<section id="metodos18" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios - com ajuste por não resposta">
+<section id="metodos20" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios - com ajuste por não resposta">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Cálculo dos pesos: domicílios - peso com ajuste por não resposta</span></p>
@@ -816,7 +831,7 @@ w_{gij}^* = \frac{1}{m_g} \times \frac{N_g}{N_{gi}} \times \frac{N_{gi}^*}{n_{gi
 </ul>
 </div>
 </section>
-<section id="metodos19" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso ajustado por calibração">
+<section id="metodos21" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso ajustado por calibração">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Cálculo dos pesos: domicílios - peso ajustado por calibração</span></p>
@@ -834,7 +849,7 @@ w_{gij'} = \frac{1}{m_g} \cdot \frac{N_g}{N_{gi}} \cdot \frac{N_{gi}^*}{n_{gi}} 
 </ul>
 </div>
 </section>
-<section id="metodos20" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso ajustado por calibração">
+<section id="metodos22" class="slide level2" data-menu-title="Metodologia: Cálculo dos pesos: domicílios - peso ajustado por calibração">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Cálculo dos pesos: domicílios - peso ajustado por calibração</span></p>
@@ -851,7 +866,7 @@ w_{hij}^{ano} = w_{hi}^{ano} \cdot \frac{N_{gi}^*}{n_{gi}} \cdot \frac{n_{gi}^*}
 </ul>
 </div>
 </section>
-<section id="metodos21" class="slide level2" data-menu-title="Metodologia: Outros estimadores">
+<section id="metodos23" class="slide level2" data-menu-title="Metodologia: Outros estimadores">
 <h2></h2>
 <p><span class="slide-title">Metodologia</span></p>
 <p><span class="custom-subtitle2">Outros estimadores relevantes</span></p>
@@ -963,8 +978,10 @@ w_{hij}^{ano} = w_{hi}^{ano} \cdot \frac{N_{gi}^*}{n_{gi}} \cdot \frac{n_{gi}^*}
 <div class="slide-title center-text">
 <p>Obrigada pela atenção!</p>
 </div>
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
+</div>
 </div>
 </section>
     </div>
@@ -993,7 +1010,6 @@ w_{hij}^{ano} = w_{hi}^{ano} \cdot \frac{N_{gi}^*}{n_{gi}} \cdot \frac{n_{gi}^*}
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -1210,18 +1226,7 @@ w_{hij}^{ano} = w_{hi}^{ano} \cdot \frac{N_{gi}^*}{n_{gi}} \cdot \frac{n_{gi}^*}
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1253,11 +1258,50 @@ w_{hij}^{ano} = w_{hi}^{ano} \cdot \frac{N_{gi}^*}{n_{gi}} \cdot \frac{n_{gi}^*}
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
-      function tippyHover(el, contentFn) {
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1267,8 +1311,17 @@ w_{hij}^{ano} = w_{hi}^{ano} \cdot \frac{N_{gi}^*}{n_{gi}} \cdot \frac{n_{gi}^*}
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -1282,7 +1335,11 @@ w_{hij}^{ano} = w_{hi}^{ano} \cdot \frac{N_{gi}^*}{n_{gi}} \cdot \frac{n_{gi}^*}
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {
